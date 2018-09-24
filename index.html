@@ -1,469 +1,993 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <style media="screen">
-      @font-face {
-        font-family: "Dustismo";
-        src: url(fonts/Dustismo_Roman.ttf) format("truetype");
-      }
-      section .img {
-        top: 0 !important;
-        margin: 0 !important;
-      }
-      .img > img {
-        margin: 0 !important;
-      }
-      .img > .horizontal {
-        width: 95% !important;
-      }
-      .img > p {
-        text-align: left !important;
-        font-size: 20pt !important;
-        margin-left: 2.5% !important;
-        margin-top: 0 !important;
-      }
-      h2 {
-        text-transform: none !important;
-        font-weight: normal !important;
-        font-family: "Dustismo",Georgia,serif !important;
-        position: fixed;
-        top: 10pt;
-        margin-left: 5%;
-      }
-      h2.section {
-        position: relative;
-        margin-left: auto;
-      }
-      .left {
-        text-align: left !important;
-        margin-left: 5% !important;
-      }
-      ul.left {
-        display: block !important;
-        margin-left: 10% !important;
-      }
-    </style>
+	<head>
+		<meta charset="utf-8">
 
-    <meta charset="utf-8">
+		<title>Seguridad de los Datos en Sistemas Empotrados</title>
 
-    <title>Semir Zeki - Visión Interior</title>
+		<meta name="description" content="Trabajo Fin de Máster (UGR/DATCOM)">
+		<meta name="author" content="Cristian Gonzalez Guerrero">
 
-    <meta name="description" content="Diapositivas para la asignatura Sistemas de Visión Bio-inspirados">
-    <meta name="author" content="Cristian G Guerrero">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+		<link rel="stylesheet" href="lib/css/vs2015.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
+		<!--[if lt IE 9]>
+			<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style type="text/css" media="screen">
+			#hacked {
+				position: fixed;
+				width: 200%;
+				top: -10%;
+				left: -50%;
+				color: green;
+				font-family: monospace;
+				z-index: -999;
+				text-align: left;
+				font-size: 10pt;
+				opacity: 0.5;
+				pointer-events: none;
+			}
+			@font-face {
+				font-family: "Dustismo";
+				src: url(fonts/Dustismo_Roman.ttf) format("truetype");
+			}
+			#title {
+				font-family: "Dustismo";
+				font-size: 48pt;
+				text-transform: none !important;
+				font-weight: normal !important;
+				font-family: "Dustismo",Georgia,serif !important;
+				/* position: fixed; */
+				/* top: 10pt; */
+				/* margin-left: 5%; */
+			}
+			#subtitle {
+				font-size: 30pt;
+				text-transform: none !important;
+			}
+			ol.index li.current a {
+				color: #fff;
+				font-weight: bold;
+			}
+			ol.index li a {
+				color: #999;
+			}
+			img.plain {
+				background: none !important;
+			}
+			p.left {
+				text-align: left !important;
+			}
+			table.middle th, table.middle td {
+				vertical-align: middle;
+			}
+			table.center th, table.center td {
+				text-align: center;
+			}
+			table.center td:first-child {
+				text-align: left;
+			}
+			table.plain td, table.plain th {
+				border: none;
+			}
+		</style>
+	</head>
 
-  </head>
+	<body>
+		<div class="reveal">
 
-  <body>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
 
-    <div class="reveal">
+				<section>
 
-      <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides">
-        <section>
-          <h2 class="section">Semir Zeki</h2>
-          <h1>Visión interior</h1>
-          <p>
-            <small>Diapositivas de Cristian G Guerrero</small>
-          </p>
-        </section>
-        <section>
-          <h2 class="section">Una función <br>del cerebro y del arte</h2>
-          <p class="fragment">
-            <q>
-              Para representar el mundo real, el cerebro (o el artista)
-              debe sacrificar la información que no es esencial.
-              <!-- en su intención de representar -->
-              <!-- el verdadero carácter de los objetos. -->
-            </q>
-            - Semir Zeki
-          </p>
-        </section>
-        <section>
-          <h2>Una función del cerebro</h2>
-          <p>¿Por qué existe la parte visual del cerebro?</p>
-          <p class="fragment left">Para poder ver... <span class="fragment">¿para qué necesitamos ver?</span></p>
-          <ul class="left">
-            <li class="fragment">encontrar una dirección</li>
-            <li class="fragment">reconocer a la gente</li>
-            <li class="fragment">comprar comida</li>
-            <li class="fragment">elegir pareja</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Una función del cerebro</h2>
-          <p>Vemos para relacionarnos, pero...
-            <span class="fragment">muchos animales se relacionan de forma eficiente
-              <!-- (en términos evolutivos) -->
-              con un sistema visual mucho más simple.</span></p>
-          </p>
-          <p></p>
-        </section>
-        <section data-background="#dddddd">
-          <h2>Una función del cerebro</h2>
-          <p>
-            <q>
-              Vemos para poder adquirir conocimiento del mundo que nos rodea.
-            </q>
-            - Semir Zeki
-          </p>
-        </section>
-        <section data-background="#dddddd">
-          <section data-background="#dddddd" class="img">
-            <img class="horizontal" src="img/athens_0.jpg" alt="">
-            <p>La escuela de Atenas - Rafael (1511)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/athens_1.jpg" alt="">
-            <p>La escuela de Atenas - Rafael (1511)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/athens_2.jpg" alt="">
-            <p>La escuela de Atenas - Rafael (1511)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/athens_3.jpg" alt="">
-            <p>La escuela de Atenas - Rafael (1511)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/athens_4.jpg" alt="">
-            <p>La escuela de Atenas - Rafael (1511)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/athens_5.jpg" alt="">
-            <p>La escuela de Atenas - Rafael (1511)</p>
-          </section>
-        </section>
-        <section data-background="#dddddd">
-          <h2>Una función del cerebro</h2>
-          <p>
-            <q>
-              <!-- El único conocimiento que merece la pena adquirir es el de las propiedades características -->
-              <!-- y duraderas del mundo; en consecuencia, -->
-              El cerebro solo se interesa por las propiedades constantes,
-              permanentes y características del mundo externo, rasgos que le permitan categorizar los objetos.
-            </q>
-            - Semir Zeki
-          </p>
-        </section>
-        <section>
-          <h2>Una función del arte</h2>
-          <p>¿Qué función tiene el arte?</p>
-          <p class="fragment left">El arte...</p>
-          <ul class="left">
-            <li class="fragment">nos permite preservar una escena</li>
-            <li class="fragment">conmueve, perturba o excita</li>
-            <li class="fragment">tiene una función social</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Una función del arte</h2>
-          <p>¿Vemos para poder contemplar el arte?</p>
-          <p class="fragment">La estética es un atributo único y singular</p>
-          <p class="fragment">Parece pretencioso, sin embargo...
-            <span class="fragment">
-              el único material que el artista tiene a su disposición es
-              aquel del que su cerebro tenga conocimiento visual
-            </span>
-        </section>
-        <section data-background="#dddddd">
-          <h2>Una función del arte</h2>
-          <p>
-            <q>
-              Representar los elementos constantes, eternos y duraderos de objetos,
-              superficies, rostros, situaciones, etc. y, por tanto, permitir que adquiramos conocimiento.
-            </q>
-             - Semir Zeki
-          </p>
-        </section>
+					<section data-transition="slide">
+						<div id="hacked">
+							<script charset="utf-8">
+							function writeNext()
+							{
+								var tmp = content.substr(0,9);
+								var hidden = "\u25AE\u25AE\u25AE\u25AE\u25AE\u25AE\u25AE\u25AE ";
+								var a = content.length/9;
+								var b = Math.round(a*Math.random());
+								content = content.substr(0,9*b) + hidden + content.substr(9*(b+1), 9*a);
+								content = content.slice(9) + tmp;
+								document.getElementById("hacked").innerHTML = content;
+								window.setTimeout(writeNext, 110);
+							}
+							document.getElementById("hacked").innerHTML = "";
+							var content = "";
+							for (k=0; k<1500; ++k)
+							{
+								var word = "";
+								for (i=0; i<8; ++i) word += Math.round(Math.random());
+								content += word + " ";
+							}
+							document.getElementById("hacked").innerHTML = content;
+							window.setTimeout(writeNext, 500);
+							</script>
+						</div>
+							<br>
+							<h1 id="title">Seguridad de los Datos en Sistemas Empotrados</h1>
+							<br>
+							<p>
+								<small>Cristian González Guerrero</small>
+							</p>
+							<br>
+							<h3 id="subtitle" style="font-family: Dustismo; ">Universidad de Granada</h3>
+							<h3 id="subtitle">Máster en Ciencia de Datos e <br>Ingeniería de Computadores</h3>
+							<aside class="notes">
+								<p>Cristian González Guerrero</p>
+								<p>Defender el Trabajo Fin de Máster: Seguridad de los Datos en Sistemas Empotrados</p>
+								<p>pero antes... explicaré cómo he llegado hasta aquí</p>
+							</aside>
+					</section>
 
-        <section>
-          <h2 class="section">El arte <br>del campo receptivo</h2>
-          <p class="fragment">
-            <q>
-              El arte nos muestra que también existen verdades constantes referentes a formas.
-            </q>
-            - Piet Mondrian
-          </p>
-        </section>
-        <section data-background="#dddddd">
-          <h2>El campo receptivo</h2>
-          <p>
-            Las neuronas responden a estímulos concretos presentados en una zona determinada.
-          </p>
-          <p class="left">Tres elementos críticos:</p>
-          <ul class="left">
-            <li>posición</li>
-            <li>forma</li>
-            <li>especifidad</li>
-          </ul>
-        </section>
+					<section id="Motivacion">
+						<h2>Seguridad de los Datos en Sistemas Empotrados</h2>
+						<ol class="index">
+							<li class="current"><a href="#/Motivacion">Motivación</a></li>
+							<li><a href="#/Objetivos">Objetivos</a></li>
+							<li><a href="#/PresentacionSistema">Presentación del sistema</a></li>
+							<li><a href="#/AnalisisTLS">Análisis de bibliotecas TLS</a></li>
+							<li><a href="#/IntegracionTLS">Integración de mbedTLS</a></li>
+							<li><a href="#/IntegracionSDK">Integración de AWS IoT Device SDK</a></li>
+							<li><a href="#/Conclusiones">Conclusiones</a></li>
+						</ol>
+					</section>
 
-        <section>
-          <h2 class="section">La neurofisiología <br> de líneas orientadas</h2>
-        </section>
-        <section>
-          <h2>Paul Cézanne (1839 - 1906)</h2>
-          <img style="width: 30% !important;" src="img/Paul_cezanne_1861.jpg" alt=""/>
-        </section>
-        <section>
-          <h2>Paul Cézanne (1839 - 1906)</h2>
-          <p>Intentó reducir la enorme variedad de formas de la naturaleza a unos cuantos elementos</p>
-          <p class="fragment">
-            <q>
-              Lo característico del método Cézanne para interpretar la forma es que primero se basa en unos pocos elementos casi
-              geométricos, claramente relacionados, y después ... concede a la parte del contorno toda la infinita sutileza de variaciones
-              que su sensibilidad pueda descubrir.
-            </q>
-            - Michel Hoogs
-          </p>
-        </section>
-        <section class="img">
-          <img class="horizontal" src="img/baigneurs-cezanne.jpg" alt="">
-          <p>Baigneurs - Paul Cézanne (1890)</p>
-        </section>
-        <section>
-          <section class="img">
-            <img class="horizontal" src="img/montaigne-saint-victoire-cezanee.jpg" alt="">
-            <p>Montagne Saint-Victoire - Paul Cézanne (1902)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/montaigne-saint-victoire-cezanee-detail-sq.jpg" alt="">
-            <p>Montagne Saint-Victoire - Paul Cézanne (1902)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/montaigne-saint-victoire-cezanee-detail.jpg" alt="">
-            <p>Montagne Saint-Victoire - Paul Cézanne (1902) - detail</p>
-          </section>
-        </section>
+				</section>
 
-        <section>
-          <h2>Paolo Uccello (1397 - 1475)</h2>
-          <br>
-          <img style="width: 40% !important;" src="img/paolo_uccello.jpg" alt=""/>
-        </section>
-        <section>
-          <section class="img">
-            <img class="horizontal" src="img/paolo_uccello_031.jpg" alt="">
-            <p>La batalla de San Romano - Paolo Uccello (1440)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/paolo_uccello_031-detail-sq.jpg" alt="">
-            <p>La batalla de San Romano - Paolo Uccello (1440)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/paolo_uccello_031-detail.jpg" alt="">
-            <p>La batalla de San Romano - Paolo Uccello (1440) - detail</p>
-          </section>
-        </section>
+				<section data-background="img/graduado.jpg" data-transition="slide">
+					<!-- <h2 class="fragment" style="color: #000">2016 <br> Prácticas en Múnich</h2> -->
+					<img class="fragment" style="width: 50%; position: fixed; left: 0; bottom: 0;" src="img/map_malaga_munich.png" alt=""/>
+					<img class="fragment" style="position: fixed; width: 60%; top: 0; right: 5%;" src="img/nevando.jpg" alt=""/>
+					<aside class="notes">
+						<p>2016: Obtengo título de Graduado en Telecomunicaciones</p>
+						<p>Prácticas de empresa en Múnich, con eesy-innovation</p>
+					</aside>
+				</section>
 
-        <section>
-          <h2>Kazimir Malevich (1879 - 1935)</h2>
-          <br>
-          <img style="width: 40% !important;" src="img/malevich_portrait.jpg" alt=""/>
-        </section>
-        <section>
-          <section class="img">
-              <img style="width: 50%!important" class="horizontal" src="img/malevich-1.jpg" alt="">
-            <p>Composición Suprematista - Kazimir Malevich (1916)</p>
-          </section>
-          <section class="img">
-              <img style="width: 60%!important" class="horizontal" src="img/malevich-2.jpg" alt="">
-            <p>Supremus No. 55 - Kazimir Malevich (1916)</p>
-          </section>
-        </section>
+				<section data-background="img/eesy_engineering_buehnenbild_1.jpg">
+					<img class="plain" style="width: 40%;" src="img/eesy_logo_blau.png" alt=""/>
+					<p>A SME enabler for nationally and internationally funded projects. Offering engineering services for:</p>
+					<ul>
+						<li>Chip development</li>
+						<li>Project management</li>
+						<li>Telecommunications</li>
+						<li>Circuit and system design</li>
+						<li>IoT in general</li>
+					</ul>
+				</section>
 
-        <section>
-          <h2>Piet Mondrian (1872 - 1944)</h2>
-          <br>
-          <img style="width: 40% !important;" src="img/mondrian_portrait.jpg" alt=""/>
-        </section>
-        <section>
-          <section class="img">
-              <img style="width: 40%!important" class="horizontal" src="img/mondrian-1.jpg" alt="">
-            <p>Composition No.IV - Piet Mondrian (1914)</p>
-          </section>
-          <section class="img">
-              <img style="width: 60%!important" class="horizontal" src="img/mondrian-2.jpg" alt="">
-            <p>Composition in red, yellow, blue and black - Piet Mondrian (1921)</p>
-          </section>
-        </section>
+				<section data-background="#fff" data-transition="fade">
+					<h2 style="margin-bottom: -90px">H2 smart</h2>
+					<img class="plain" src="img/h2.png" alt=""/>
+					<aside class="notes">
+						<p>Con la experiencia adquirida:</p>
+						<p>Mercado: Productos SmartHome</p>
+					</aside>
+				</section>
 
-        <section data-background="#dddddd">
-          <h2>Neurofisiología de líneas orientadas</h2>
-          <ul class="left">
-            <li>Al contemplar este tipo de arte, se activan muchas neuronas de V1.</li>
-            <li>Estas responden ante líneas orientadas.</li>
-            <li>Algunas tienen preferencia de longitud: percepción de líneas paralelas.</li>
-          </ul>
-        </section>
-        <section data-background="#dddddd" class="img">
-          <img class="horizontal" src="img/vision_interior-2.jpg" alt="">
-        </section>
+				<section data-background="img/aq_home.jpg">
+				</section>
 
+				<section data-background="#ccc" data-transition="fade">
+					<img class="plain" src="img/h2.png" alt=""/>
+				</section>
 
-        <section>
-          <h2 class="section">La neurofisiología <br> de cuadrados y rectángulos</h2>
-        </section>
-        <section class="img">
-          <img style="width: 70%!important" class="horizontal" src="img/mondrian-3.jpg" alt="">
-          <p>Composition with Color Fields - Piet Mondrian (1917)</p>
-        </section>
-        <section class="img">
-          <img style="width: 60%!important" class="horizontal" src="img/malevich-3.jpg" alt="">
-          <p>Cuadrado rojo - Kazimir Malevich (1915)</p>
-        </section>
-        <section data-background="#dddddd">
-          <h2>Neurofisiología de cuadrados y rectángulos</h2>
-          <ul class="left">
-            <li>Los campos receptivos suelen tener forma cuadrada o rectangular.</li>
-            <li>En V4, muchas células responden ante cuadrados cuyo color es distinto al del fondo.</li>
-          </ul>
-        </section>
+				<section data-background="#ccc" data-transition="fade">
+					<img class="plain" src="img/h2_aq.png" alt=""/>
+				</section>
 
-        <section data-background="#dddddd">
-          <h2>Problemas perceptuales de los campos receptivos</h2>
-          <ul class="left">
-            <li>¿Cómo sabemos que una línea es la misma si se percibe por distintas células, que pueden estar incluso en hemisferios distintos?</li>
-            <li>¿Cómo sabemos que una línea sigue siendo la misma a pesar de su movimiento?</li>
-            <li>¿Cómo identificamos un objeto compuesto por puntos? ¿Cómo lo separamos de su entorno?</li>
-          </ul>
-        </section>
-        <section>
-          <section class="img">
-            <img style="width: 40%!important" src="img/suprematism-1915.jpg" alt="">
-            <p>Pintura suprematista - Kazimir Malevich (1915)</p>
-          </section>
-          <section class="img">
-            <img style="width: 50%!important" src="img/suprematism-1928.jpg" alt="">
-            <p>Pintura suprematista - Kazimir Malevich (1928)</p>
-          </section>
-          <section class="img">
-            <img style="width: 75%!important" class="horizontal" src="img/matisse-1.jpg" alt="">
-            <p>Luxe, Calme et Volupté - Henri Matisse (1904)</p>
-          </section>
-        </section>
+				<section data-background="#fff" data-transition="fade">
+					<img class="plain" src="img/aq_phone.png" alt=""/>
+				</section>
 
-        <section data-background="#dddddd" class="img">
-            <img style="width: 65%!important" src="img/vision_interior-3.jpg" alt="">
-        </section>
+				<section data-background="#fff" data-transition="none">
+					<img class="plain" src="img/h2.png" alt=""/>
+				</section>
 
+				<section data-background="#fff" data-transition="none">
+					<img class="plain " src="img/h2_gw_c.png" alt=""/>
+					<aside class="notes">
+						<p>Los sensores se conectan a la nube a través del miniGW</p>
+					</aside>
+				</section>
 
-        <section>
-          <h2 class="section">La neurofisiología <br> del movimiento</h2>
-        </section>
-        <section class="img">
-          <h2>Marcel Duchamp (1887 - 1968)</h2>
-          <img style="width: 40%!important" class="horizontal" src="img/duchamp_portrait.jpg" alt="">
-        </section>
-        <section>
-          <section class="img">
-            <img style="width: 40%!important" class="horizontal" src="img/duchamp-1.jpg" alt="">
-            <p>Desnudo bajando una escalera - Marcel Duchamp (1912)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/muybridge.jpg" alt="">
-            <p>Mujer bajando una escalera - Eadweard Muybridge (1887)</p>
-          </section>
-          <section class="img">
-            <img class="horizontal" src="img/marey-1.jpg" alt="">
-            <p>Bird Flight -  Étienne-Jules Marey (1882)</p>
-          </section>
-        </section>
-        <!-- <section data-background="#dddddd"> -->
-        <!--   <h2>Neurofisiología de cuadrados y rectángulos</h2> -->
-        <!--   <ul class="left"> -->
-        <!--     <li>Los campos receptivos suelen tener forma cuadrada o rectangular.</li> -->
-        <!--     <li>En V4, muchas células responden ante cuadrados cuyo color es distinto al del fondo.</li> -->
-        <!--   </ul> -->
-        <!-- </section> -->
+				<!-- <section data&#45;background="#b2b2b2" data&#45;transition="none"> -->
+				<!-- 	<div style="background&#45;color: #b2b2b2;"> -->
+				<!-- 		<img class="plain " src="img/h2_gw_c2.jpg" alt=""/> -->
+				<!-- 	</div> -->
+				<!-- </section> -->
 
+				<section data-background="img/tw.jpg">
+					<h2>Fin de las prácticas</h2>
+					<p class="left">Durante la estancia descubro:</p>
+					<ul>
+						<li class="fragment">Internet de las Cosas (IoT)</li>
+						<li class="fragment">Sistemas empotrados</li>
+					</ul>
+					<p class="fragment">Máster DATCOM <span class="fragment">- proyectos con eesy-innovation</span></p>
+					<br>
+					<!-- <p>Concluye mi estancia en M'unich, curso el Master, trabajo a jornada parcial (llevo a cabo este proyecto, como uno de los trabajos)</p> -->
+					<!-- <p>Concluye mi estancia en M'unich, y tengo la oportunidad de cursar este maravilloso Master mientras sigo trabajando para eesy&#45;innovation</p> -->
+				</section>
 
+				<section id="Objetivos">
+					<h2>Seguridad de los Datos en Sistemas Empotrados</h2>
+					<ol class="index">
+						<li><a href="#/Motivacion">Motivación</a></li>
+						<li class="current"><a href="#/Objetivos">Objetivos</a></li>
+						<li><a href="#/PresentacionSistema">Presentación del sistema</a></li>
+						<li><a href="#/AnalisisTLS">Análisis de bibliotecas TLS</a></li>
+						<li><a href="#/IntegracionTLS">Integración de mbedTLS</a></li>
+						<li><a href="#/IntegracionSDK">Integración de AWS IoT Device SDK</a></li>
+						<li><a href="#/Conclusiones">Conclusiones</a></li>
+					</ol>
+				</section>
 
-        <section data-background="#dddddd" class="img">
-            <img class="horizontal" src="img/vision_interior-4.jpg" alt="">
-        </section>
-        <section data-background="#dddddd" class="img">
-            <img class="horizontal" src="img/vision_interior-5.jpg" alt="">
-        </section>
-        <section data-background="#dddddd" class="img">
-            <img src="img/vision_interior-6.jpg" alt="">
-        </section>
-        <section data-background="#dddddd" class="img">
-            <img class="horizontal" src="img/vision_interior-7.jpg" alt="">
-        </section>
-        <section data-background="#dddddd" class="img">
-            <img src="img/vision_interior-8.jpg" alt="">
-        </section>
+				<section data-background="#dddddd" data-transition="none">
+					<h2>Objetivos</h2>
+					<img class="plain" style="width: 60%" src="img/gw_funcion.png" alt=""/>
+					<aside class="notes">
+						<p>Arquitectura del sistema:</p>
+						<ol>
+							<li>Red de sensores: miden variables de interés</li>
+							<li>Nube: almacena, dando acceso al usuario</li>
+							<li>Pasarela (miniGW): comunica la red de sensores con la nube</li>
+						</ol>
+					</aside>
+				</section>
 
-        <section class="img">
-		<iframe width="800" height="480" src="https://www.youtube.com/embed/Noe5-awlbfw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <p>Jean Tinguely</p>
-        </section>
-        <section class="img">
-          <iframe width="800" height="480" src="https://www.youtube.com/embed/oJrMKpNgJQ0?start=14" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	  <p>Metamalevich</p>
-        </section>
-        <section class="img">
-          <iframe width="800" height="480" src="https://www.youtube.com/embed/fI5PRaTSMUI?start=33" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	  <p>Alexander Calder</p>
-        </section>
+				<section data-background="#dddddd" data-transition="none">
+					<h2>Objetivos</h2>
+					<img class="plain" style="width: 60%" src="img/objetivos1.png" alt=""/>
+					<aside class="notes">
+						<p>Establecer comunicación segura con Internet</p>
+						<ul>
+							<li>Confidencialidad e integridad de los datos</li>
+							<li>Ejemplo: temperatura + movimiento = ladron</li>
+						</ul>
+						<p>Revisar implementaciones TLS</p>
+					</aside>
+				</section>
 
-        <section>
-          <h2 class="section">Gracias por <br> vuestra atención</h2>
-        </section>
+				<section data-background="#dddddd" data-transition="none">
+					<h2>Objetivos</h2>
+					<img class="plain" style="width: 60%" src="img/objetivos2.png" alt=""/>
+					<aside class="notes">
+						<p>Comunicación con AWS IoT (intercambio de mensajes)</p>
+						<p>No definiremos toda la arquitectura: prueba de concepto</p>
+					</aside>
+				</section>
 
-      </div>
+				<section>
+					<h2>Objetivos</h2>
+					<ol>
+						<li>Establecer comunicación segura con Internet</li>
+						<ul>
+							<li>Revisar implementaciones TLS</li>
+						</ul>
+						<li>Intercambio de mensajes con AWS IoT</li>
+					</ol>
+					<aside class="notes">
+						<p>Esto lo llevaremos a cabo en un sistema específico (el miniGW), por lo que vamos a introducirlo con más detalle</p>
+					</aside>
+				</section>
 
-    </div>
+				<section id="PresentacionSistema">
+					<h2>Seguridad de los Datos en Sistemas Empotrados</h2>
+					<ol class="index">
+						<li><a href="#/Motivacion">Motivación</a></li>
+						<li><a href="#/Objetivos">Objetivos</a></li>
+						<li class="current"><a href="#/PresentacionSistema">Presentación del sistema</a></li>
+						<li><a href="#/AnalisisTLS">Análisis de bibliotecas TLS</a></li>
+						<li><a href="#/IntegracionTLS">Integración de mbedTLS</a></li>
+						<li><a href="#/IntegracionSDK">Integración de AWS IoT Device SDK</a></li>
+						<li><a href="#/Conclusiones">Conclusiones</a></li>
+					</ol>
+				</section>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+				<section data-background="#fff" data-transition="none">
+					<h2>H2 miniGW</h2>
+					<img class="plain" src="img/gw_hw_photo0.png" alt=""/>
+					<aside class="notes">
+						<p>DAR CIRCUITO FÍSICO</p>
+						<p>Sistema embebido. Función: comunicar sensores con nube</p>
+					</aside>
+				</section>
 
-    <script>
+				<section data-background="#fff" data-transition="none">
+					<h2>H2 miniGW</h2>
+					<img class="plain" src="img/gw_hw_photo1.png" alt=""/>
+					<aside class="notes">
+						<p>XMC: microcontrolador principal, ejecuta el programa que da funcionalidad</p>
+					</aside>
+				</section>
 
-      // More info https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+				<section data-background="#fff" data-transition="none">
+					<h2>H2 miniGW</h2>
+					<img class="plain" src="img/gw_hw_photo2.png" alt=""/>
+					<aside class="notes">
+						<p>TDA: comunicación con sensores</p>
+						<p>TDA conectado a XMC por SPI</p>
+					</aside>
+				</section>
 
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
+				<section data-background="#fff" data-transition="none">
+					<h2>H2 miniGW</h2>
+					<img class="plain" src="img/gw_hw_photo3.png" alt=""/>
+					<aside class="notes">
+						<p>Antena: comunicación inalámbrica subGHz</p>
+					</aside>
+				</section>
 
-        // More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/search/search.js', async: true },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
-        ]
-      });
+				<section data-background="#fff" data-transition="none">
+					<h2>H2 miniGW</h2>
+					<img class="plain" src="img/gw_hw_photo4.png" alt=""/>
+					<aside class="notes">
+						<p>Ethernet: conexión a Internet</p>
+						<strong>Lo que programaremos es el XMC</strong>
+					</aside>
+				</section>
 
-    </script>
+				<!-- <section> -->
+				<!-- 	<h2>H2 miniGW</h2> -->
+				<!-- 	<table> -->
+				<!-- 		<thead><tr><th colspan="2">Componentes principales</th></tr></thead> -->
+				<!-- 		<tr><td>Microcontrolador</td><td><strong>XMC4500</strong></td></tr> -->
+				<!-- 		<tr><td>Conexión con sensores</td><td><strong>TDA5340 + Antena</strong></td></tr> -->
+				<!-- 		<tr><td>Conexión a Internet</td><td><strong>Ethernet (RJ45)</strong></td></tr> -->
+				<!-- 	</table> -->
+				<!-- 	<!&#45;&#45; <p class="left">Componentes principales:</p> &#45;&#45;> -->
+				<!-- 	<!&#45;&#45; <ul> &#45;&#45;> -->
+				<!-- 	<!&#45;&#45; 	<li>Microcontrolador: <strong>XMC4500</strong></li> &#45;&#45;> -->
+				<!-- 	<!&#45;&#45; 	<li>Conexión con sensores: <strong>TDA5340 + Antena</strong></li> &#45;&#45;> -->
+				<!-- 	<!&#45;&#45; 	<li>Conexión a Internet: <strong>Ethernet (RJ45)</strong></li> &#45;&#45;> -->
+				<!-- 	<!&#45;&#45; </ul> &#45;&#45;> -->
+				<!-- </section> -->
 
-  </body>
+				<section>
+					<h2>XMC4500</h2>
+					<ul>
+						<li>Procesador<span class="fragment">: ARM Cortex-M4 (32-bit CPU)</span></li>
+						<li>Flash (programa + datos)<span class="fragment">: 1024KB</span></li>
+						<li>RAM<span class="fragment">: 160KB (en 3 bloques)</span></li>
+						<li>Periféricos<span class="fragment">: DAC, ADC, Ethernet, USIC, etc.</span></li>
+						<!-- <li>Periféricos:</li> -->
+						<!-- <ul> -->
+						<!-- 	<li>DAC</li> -->
+						<!-- 	<li>ADC</li> -->
+						<!-- 	<li>Ethernet</li> -->
+						<!-- 	<li>USIC</li> -->
+						<!-- 	<li>etc.</li> -->
+						<!-- </ul> -->
+					</ul>
+					<aside class="notes">
+						<p>Recursos muy limitados</p>
+						<p>En este microcontrolador se ejecuta un firmware, encargado de llevar a cabo las funciones...</p>
+					</aside>
+				</section>
+
+				<section data-background="#ddd">
+					<h2>Firmware</h2>
+					<img class="plain" src="img/gw_sw.png" alt=""/>
+					<!-- XMC4500: Firmware (CMSIS&#45;RTOS + lwIP) -->
+					<aside class="notes">
+						<p>Firmware complejo:</p>
+						<ul>
+							<li>Múltiples tareas de alto nivel: lectura de sensores, reenvío de datos, NTP</li>
+							<li>Software de soporte: RTOS (coordinación de tareas), pilas de red (com. Inet + sensores), bibliotecas</li>
+							<li>Capa de abstracción de HW: provista por la IDE</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section id="AnalisisTLS">
+					<h2>Seguridad de los Datos en Sistemas Empotrados</h2>
+					<ol class="index">
+						<li><a href="#/Motivacion">Motivación</a></li>
+						<li><a href="#/Objetivos">Objetivos</a></li>
+						<li><a href="#/PresentacionSistema">Presentación del sistema</a></li>
+						<li class="current"><a href="#/AnalisisTLS">Análisis de bibliotecas TLS</a></li>
+						<li><a href="#/IntegracionTLS">Integración de mbedTLS</a></li>
+						<li><a href="#/IntegracionSDK">Integración de AWS IoT Device SDK</a></li>
+						<li><a href="#/Conclusiones">Conclusiones</a></li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Criterios de la búsqueda</h2>
+					<ol>
+						<li>Adecuada para sistemas empotrados</li>
+						<ul class="fragment">
+							<li>Lenguaje C estándar</li>
+							<!-- <li>Mínimas dependencias</li> -->
+							<li><em>Low footprint</em></li>
+						</ul>
+						<li>Compatible con el sistema</li>
+						<ul class="fragment">
+							<li>CMSIS-RTOS</li>
+							<li>lwIP</li>
+						</ul>
+						<li>Seguridad</li>
+						<ul class="fragment">
+							<li>Ciphersuites AWS IoT</li>
+							<li>Desarrollo continuo</li>
+						</ul>
+					</ol>
+					<aside class="notes">
+						<p>Criterios relacionados con (las restricciones de los) sistemas empotrados</p>
+						<p>También valoramos:</p>
+						<ul>
+							<li>Disponibilidad de documentación</li>
+							<li>Soporte para ingenieros</li>
+							<li>Licencias</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-background="#ddd">
+					<div><img class="plain" style="width: 20%; margin: 0;" src="img/wiki2.png" alt=""/></div>
+					<div style="margin-top: 10px; margin-bottom: -40px;"><img class="plain" style="width: 35%; margin: 0;" src="img/gh.png" alt=""/></div>
+					<div><img class="plain" style="width: 60%; margin: 0;" src="img/se.png" alt=""/></div>
+					<aside class="notes">
+						<p>Buscamos en: Wikipedia, StackExchange, Github</p>
+						<p>1er filtro: características mencionadas en estas plataformas</p>
+						<p>Comparamos características de 5 bibliotecas basándonos en su documentación oficial</p>
+					</aside>
+				</section>
+
+				<section data-background="#ddd">
+					<!-- <div> -->
+					<!-- 	<div style="width: 45%; display: inline&#45;block;"> -->
+					<!-- 		<img class="plain" src="img/wolf&#45;logo&#45;shadow&#45;icon.png" alt=""/> -->
+					<!-- 		<p class="fragment">Seguridad en MySQL</p> -->
+					<!--  -->
+					<!-- 	</div> -->
+					<!-- 	<div style="width: 45%; display: inline&#45;block;"> -->
+					<!-- 		<p>mbed TLS</p> -->
+					<!-- 		<img class="plain fragment" src="img/mbed_logo.png" alt=""/> -->
+					<!-- 	</div> -->
+					<!-- </div> -->
+					<table class="center middle plain">
+						<thead>
+							<tr>
+								<th class="fragment" style="font-size: 48pt">VS</th>
+								<th>
+									<img class="plain" src="img/wolf-logo-shadow-icon.png" alt="WolfSSL"/>
+								</th>
+								<th>
+									mbed TLS
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="fragment">
+								<td>Conocido por</td>
+								<td>MySQL</td>
+								<td><img class="plain" src="img/mbed_logo.png" alt="ARM mbed"/></td>
+							</tr>
+							<tr class="fragment">
+								<td>Verificaciones</td>
+								<td>WolfCrypt<br>(FIPS-140 l1)</td>
+								<td>No</td>
+							</tr>
+							<tr class="fragment">
+								<td>Licencia</td>
+								<td>$5000</td>
+								<td>Sin costo</td>
+							</tr>
+							<tr class="fragment">
+								<td>Compatible</td>
+								<td>RTOS, lwIP</td>
+								<td><strong>AWS IoT SDK</strong></td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">
+						<p>Tras analizar las 5 candidatas, hay 2 muy fuertes: mbedTLS y WolfSSL</p>
+						<p>Ambas tienen características similares:</p>
+						<ul>
+							<li>Bibliotecas altamente configurables</li>
+							<li>Compatible con el sistema</li>
+							<li>En continuo desarrollo</li>
+							<li>Comunidad activa</li>
+							<li>Test de integridad</li>
+						</ul>
+					</aside>
+				</section>
+
+				<!-- <section> -->
+				<!-- 	Finalmente nos decantamos por mbedTLS: motivos -->
+				<!-- </section> -->
+
+				<section id="IntegracionTLS">
+					<h2>Seguridad de los Datos en Sistemas Empotrados</h2>
+					<ol class="index">
+						<li><a href="#/Motivacion">Motivación</a></li>
+						<li><a href="#/Objetivos">Objetivos</a></li>
+						<li><a href="#/PresentacionSistema">Presentación del sistema</a></li>
+						<li><a href="#/AnalisisTLS">Análisis de bibliotecas TLS</a></li>
+						<li class="current"><a href="#/IntegracionTLS">Integración de mbedTLS</a></li>
+						<li><a href="#/IntegracionSDK">Integración de AWS IoT Device SDK</a></li>
+						<li><a href="#/Conclusiones">Conclusiones</a></li>
+					</ol>
+				</section>
+
+				<section data-background="#dddddd" data-transition="none">
+					<h2>Objetivos</h2>
+					<img class="plain" style="width: 60%" src="img/objetivos1.png" alt=""/>
+					<aside class="notes">
+						<p>Encargada de establecer conexiones seguras</p>
+						<ul>
+							<li>Encriptación (simétrica, clave pública)</li>
+							<li>Certificados (Autenticación mutua)</li>
+							<li>Protocolo (búferes, estado de la conexión...)</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Integración de mbed TLS</h2>
+						<p class="left">Será necesario:</p>
+						<ol>
+							<li>Importar biblioteca al proyecto</li>
+							<li>Compilar (firmware incluye biblioteca)</li>
+							<li>Modificar lo necesario para que funcione</li>
+						</ol>
+						<p class="fragment">Tiene dependencias de la plataforma...</p>
+					<aside class="notes">
+						<p>mbedTLS es altamente configurable</p>
+					</aside>
+				</section>
+
+				<section data-background="#ddd" data-transition="none">
+					<h2>Integración de mbed TLS</h2>
+					<img class="plain" src="img/mbedTLS_port0.png" alt=""/>
+					<!-- <p class="left">Será necesario portar:</p> -->
+					<!-- <ul> -->
+					<!-- 	<li>Módulo de red</li> -->
+					<!-- 	<li>Fuentes de entropía</li> -->
+					<!-- 	<li>Módulo de temporización</li> -->
+					<!-- </ul> -->
+					<aside class="notes">
+						<p>El módulo de red permite conectividad TCP/IP</p>
+						<p>Necesario para TLS (no necesario para validar certificados)</p>
+					</aside>
+				</section>
+
+				<section data-background="#ddd" data-transition="none">
+					<h2>Integración de mbed TLS</h2>
+					<img class="plain" src="img/mbedTLS_port1.png" alt=""/>
+					<!-- <p class="left">Será necesario portar:</p> -->
+					<!-- <ul> -->
+					<!-- 	<li>Módulo de red</li> -->
+					<!-- 	<li>Fuentes de entropía</li> -->
+					<!-- 	<li>Módulo de temporización</li> -->
+					<!-- </ul> -->
+					<aside class="notes">
+						<p>Entropía es clave en seguridad: para generar claves, challenges, etc.</p>
+					</aside>
+				</section>
+
+				<section data-background="#ddd" data-transition="none">
+					<h2>Integración de mbed TLS</h2>
+					<img class="plain" src="img/mbedTLS_port2.png" alt=""/>
+					<!-- <p class="left">Será necesario portar:</p> -->
+					<!-- <ul> -->
+					<!-- 	<li>Módulo de red</li> -->
+					<!-- 	<li>Fuentes de entropía</li> -->
+					<!-- 	<li>Módulo de temporización</li> -->
+					<!-- </ul> -->
+					<aside class="notes">
+						<p>Tiempo real usado para validar certificados</p>
+					</aside>
+				</section>
+
+				<section data-background="#ddd" data-transition="none">
+					<h2>Integración de mbed TLS</h2>
+					<img class="plain" src="img/mbedTLS_port3.png" alt=""/>
+					<!-- <p class="left">Será necesario portar:</p> -->
+					<!-- <ul> -->
+					<!-- 	<li>Módulo de red</li> -->
+					<!-- 	<li>Fuentes de entropía</li> -->
+					<!-- 	<li>Módulo de temporización</li> -->
+					<!-- </ul> -->
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Módulo de red</h3>
+					<p class="left">net_sockets.c</p>
+					<pre style="width: 95%"><code class="cpp hljs" data-trim>
+#if defined(MBEDTLS_NET_C)
+
+#if !defined(unix) &amp;&amp; !defined(__unix__) &amp;&amp; !defined(__unix) &amp;&amp; \
+	!defined(__APPLE__) &amp;&amp; !defined(_WIN32) &amp;&amp; !defined(DAVE)
+	#error "This module only works on Unix, DAVE and Windows, see MBEDTLS_NET_C in config.h"
+#endif
+
+#if defined(MBEDTLS_PLATFORM_C)
+	#include "mbedtls/platform.h"
+#else
+	#include &lt;stdlib.h&gt;
+#endif
+
+#include "mbedtls/net_sockets.h"
+
+#include &lt;string.h&gt;
+
+#if (defined(_WIN32) || defined(_WIN32_WCE)) &amp;&amp; !defined(EFIX64) &amp;&amp; \
+	!defined(EFI32)
+
+	/***********
+	 * WINDOWS *
+	 ***********/
+	#ifdef _WIN32_WINNT
+		#undef _WIN32_WINNT
+	#endif
+	/* Enables getaddrinfo() &amp; Co */
+	#define _WIN32_WINNT 0x0501
+	#include &lt;ws2tcpip.h&gt;
+
+	#include &lt;winsock2.h&gt;
+	#include &lt;windows.h&gt;
+
+	#if defined(_MSC_VER)
+		#if defined(_WIN32_WCE)
+			#pragma comment( lib, "ws2.lib" )
+		#else
+			#pragma comment( lib, "ws2_32.lib" )
+		#endif
+	#endif /* _MSC_VER */
+
+	#define read(fd,buf,len)        recv(fd,(char*)buf,(int) len,0)
+	#define write(fd,buf,len)       send(fd,(char*)buf,(int) len,0)
+	#define close(fd)               closesocket(fd)
+
+	static int wsa_init_done = 0;
+
+#else /* ( _WIN32 || _WIN32_WCE ) &amp;&amp; !EFIX64 &amp;&amp; !EFI32 */
+
+	#if defined(DAVE)
+
+		/********
+		 * DAVE *
+		 ********/
+		#include &lt;sys/types.h&gt;
+		#include &lt;lwip/sockets.h&gt;
+		#include &lt;lwip/inet.h&gt;
+		#include &lt;unistd.h&gt;
+		#include &lt;signal.h&gt;
+		#include &lt;lwip/netdb.h&gt;
+		#include &lt;errno.h&gt;
+
+	#else
+
+		/********
+		 * UNIX *
+		 ********/
+		#include &lt;sys/types.h&gt;
+		#include &lt;sys/socket.h&gt;
+		#include &lt;netinet/in.h&gt;
+		#include &lt;arpa/inet.h&gt;
+		#include &lt;sys/time.h&gt;
+		#include &lt;unistd.h&gt;
+		#include &lt;signal.h&gt;
+		#include &lt;fcntl.h&gt;
+		#include &lt;netdb.h&gt;
+		#include &lt;errno.h&gt;
+
+	#endif /* DAVE */
+
+#endif /* ( _WIN32 || _WIN32_WCE ) &amp;&amp; !EFIX64 &amp;&amp; !EFI32 */
+
+#endif /* MBEDTLS_NET_C */
+					</code></pre>
+				</section>
+
+				<section data-background="#ddd">
+					<h3>Fuentes de entropía</h3>
+					<img class="plain" src="img/prng.png" alt=""/>
+					<aside class="notes">
+						<p>Entropía: es la base de una buena seguridad</p>
+						<p>Usamos módulo HW (DAC)</p>
+						<p>Secuencia pseudoaleatoria</p>
+						<p>Se lee a través del ADC</p>
+					</aside>
+				</section>
+
+				<section>
+					<h3>Fuentes de entropía</h3>
+					<p class="left">Aleatoriedad dada por:</p>
+					<ol>
+						<li>No determinismo</li>
+						<li>Digital &#x2192; Analog &#x2192; Digital</li>
+						<li>Recolección de entropía</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Módulo de temporización</h3>
+					<pre><code class="cpp hljs" data-trim>
+#include "mbedtls/platform_DAVE.h"
+
+mbedtls_time_t mbedtls_time_DAVE( mbedtls_time_t* timer ) {
+	mbedtls_time_t now;
+
+	if (timer == NULL) {
+		timer = &now;
+	}
+
+	RTC_Time(timer);
+	return *timer;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Configuración de mbed TLS</h2>
+					<p>Configuración mínima con ciphersuites recomendados por AWS y reducción del uso de memoria</p>
+				</section>
+
+				<section data-background="#ddd">
+					<img class="plain" style="width: 75%" src="img/test-setup.png" alt=""/>
+				</section>
+
+				<section>
+					<h2>Verificaciones</h2>
+					<ol>
+						<li class="fragment">Tests unitarios: <span class="fragment">proporcionados por mbed TLS</span></li>
+						<p class="fragment">Programa <code>selftest.c</code></p>
+						<li class="fragment">Test funcional: <span class="fragment">conectar con servidor HTTPS</span></li>
+						<p class="fragment">Verificar recepción de <code>200 OK</code></p>
+					</ol>
+				</section>
+
+				<section id="IntegracionSDK">
+					<h2>Seguridad de los Datos en Sistemas Empotrados</h2>
+					<ol class="index">
+						<li><a href="#/Motivacion">Motivación</a></li>
+						<li><a href="#/Objetivos">Objetivos</a></li>
+						<li><a href="#/PresentacionSistema">Presentación del sistema</a></li>
+						<li><a href="#/AnalisisTLS">Análisis de bibliotecas TLS</a></li>
+						<li><a href="#/IntegracionTLS">Integración de mbedTLS</a></li>
+						<li class="current"><a href="#/IntegracionSDK">Integración de AWS IoT Device SDK</a></li>
+						<li><a href="#/Conclusiones">Conclusiones</a></li>
+					</ol>
+				</section>
+
+				<section data-background="#fff">
+					<!-- <h2>Integración de AWS IoT Device SDK</h2> -->
+					<img class="plain" src="img/AWS_IoT.png" alt=""/>
+					<aside class="notes">
+						<p>Describir la biblioteca:</p>
+						<ol>
+							<li>encargada de conectarse con AWS IoT:</li>
+							<ul>
+								<li>conexión segura (mutuamente autenticada)</li>
+								<li>modificar lecturas en dispositivos virtuales (sombra)</li>
+								<li>ejecutar acciones (sombra)</li>
+							</ul>
+							<li>para ello usa:</li>
+							<ul>
+								<li>MQTT</li>
+								<li>JSON (jsmn)</li>
+								<li>TLS (mbed TLS)</li>
+							</ul>
+						</ol>
+						<p>Hay elementos que dependen de la plataforma. AWS IoT SDK usa el paradigma de PLATAFORMA.</p>
+					</aside>
+				</section>
+
+				<section data-background="#ddd" data-transition="none">
+					<h2>Integración AWS IoT Device SDK</h2>
+					<img class="plain" src="img/mbedTLS_port0.png" alt=""/>
+					<!-- <p class="left">Será necesario portar:</p> -->
+					<!-- <ul> -->
+					<!-- 	<li>Conectividad de red</li> -->
+					<!-- 	<li>Temporizadores</li> -->
+					<!-- 	<li>Concurrencia</li> -->
+					<!-- </ul> -->
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background="#ddd" data-transition="none">
+					<h2>Integración AWS IoT Device SDK</h2>
+					<img class="plain" src="img/AWSSDK_port1.png" alt=""/>
+					<!-- <p class="left">Será necesario portar:</p> -->
+					<!-- <ul> -->
+					<!-- 	<li>Conectividad de red</li> -->
+					<!-- 	<li>Temporizadores</li> -->
+					<!-- 	<li>Concurrencia</li> -->
+					<!-- </ul> -->
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background="#ddd" data-transition="none">
+					<h2>Integración AWS IoT Device SDK</h2>
+					<img class="plain" src="img/AWSSDK_port2.png" alt=""/>
+					<!-- <p class="left">Será necesario portar:</p> -->
+					<!-- <ul> -->
+					<!-- 	<li>Conectividad de red</li> -->
+					<!-- 	<li>Temporizadores</li> -->
+					<!-- 	<li>Concurrencia</li> -->
+					<!-- </ul> -->
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section data-background="#ddd" data-transition="none">
+					<h2>Integración AWS IoT Device SDK</h2>
+					<img class="plain" src="img/AWSSDK_port3.png" alt=""/>
+					<!-- <p class="left">Será necesario portar:</p> -->
+					<!-- <ul> -->
+					<!-- 	<li>Conectividad de red</li> -->
+					<!-- 	<li>Temporizadores</li> -->
+					<!-- 	<li>Concurrencia</li> -->
+					<!-- </ul> -->
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h3>Conectividad de red</h3>
+					<p class="left">Modificado fichero <code>network_mbedtls_wrapper.c</code></p>
+					<p class="left">Certificados contenidos en variables (hardcoded):</p>
+					<ul>
+						<li>Certificado del dispositivo</li>
+						<li>Clave privada</li>
+						<li>Autoridad certificadora</li>
+					</ul>
+					<aside class="notes">
+						<p>En la conexión se lleva a cabo la autenticación mutua. Requiere:</p>
+						<ul>
+							<li>Tener el certificado del dispositivo</li>
+							<li>Validar el certificado del servidor (con Autoridad Certificadora)</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h3>Temporizadores</h3>
+					<p>Gestionan <em>timeouts</em> en las conexiones</p>
+					<p>Implementados a partir de <code>osKernelSysTick()</code></p>
+				</section>
+
+				<section>
+					<h3>Concurrencia</h3>
+						<p>Implementado a partir de los <em>mutex</em> de RTOS</p>
+				</section>
+
+				<section>
+					<h3>Configuración</h3>
+					<p class="left"><code>aws_iot_config.h</code></p>
+					<pre><code class="hljs" data-trim>
+#define AWS_IOT_MQTT_HOST        "XXXXXX.amazonaws.com"
+#define AWS_IOT_MQTT_PORT        8883
+#define AWS_IOT_MQTT_CLIENT_ID   "c-sdk-client-id"
+#define AWS_IOT_MY_THING_NAME    "AWS-IoT-C-SDK"
+#define AWS_IOT_ROOT_CA          ca_root
+#define AWS_IOT_CERTIFICATE      client_cert
+#define AWS_IOT_PRIVATE_KEY      client_key
+					</code></pre>
+				</section>
+
+				<section>
+					<section>
+						<h3>Verificaciones</h3>
+						<ol>
+							<li class="fragment">Test funcional: <span class="fragment">envío de mensajes MQTT</span></li>
+							<p class="fragment">Visualización del tráfico desde la consola</p>
+							<li class="fragment">Test funcional: <span class="fragment">actualización de la sombra</span></li>
+							<p class="fragment">Visualización de la sombra desde la consola</p>
+						</ol>
+					</section>
+
+					<section>
+						<h2>Problemas encontrados</h2>
+						<p>Actualizar lwIP</p>
+						<p>Modificar malloc</p>
+					</section>
+				</section>
+
+				<section id="Conclusiones">
+					<h2>Seguridad de los Datos en Sistemas Empotrados</h2>
+					<ol class="index">
+						<li><a href="#/Motivacion">Motivación</a></li>
+						<li><a href="#/Objetivos">Objetivos</a></li>
+						<li><a href="#/PresentacionSistema">Presentación del sistema</a></li>
+						<li><a href="#/AnalisisTLS">Análisis de bibliotecas TLS</a></li>
+						<li><a href="#/IntegracionTLS">Integración de mbedTLS</a></li>
+						<li><a href="#/IntegracionSDK">Integración de AWS IoT Device SDK</a></li>
+						<li class="current"><a href="#/Conclusiones">Conclusiones</a></li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Conclusiones</h2>
+					<ul>
+						<li class="fragment">Conexión segura con AWS IoT</li>
+						<li class="fragment">TLS configurable en tiempo de compilación</li>
+						<li class="fragment">RAM necesaria (ECC): 17KB stack + 35KB heap</li>
+						<li class="fragment">La seguridad es fundamental en IoT</li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>Hemos conseguido conectarnos a AWS IoT de forma segura</li>
+							<li>Existen soluciones de seguridad para sistemas empotrados muy versátiles</li>
+							<li>Aunque la criptografía es computacionalmente costosa, 50KB de RAM son suficientes</li>
+							<li>Un sistema vulnerable supone un riesgo: para el consumidor y para la sociedad</li>
+							<ul>
+								<li>Los consumidores deben exigir sistemas seguros</li>
+								<li>Las empresas deben trabajar en la seguridad de sus productos</li>
+							</ul>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Gracias por su atención</h2>
+					<h3 class="fragment">¿Preguntas?</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>

@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="240mm"
+   height="140mm"
+   viewBox="0 0 240 140"
+   version="1.1"
+   id="svg5773"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="gw_sw.svg"
+   inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/slides/reveal.js/img/AWSSDK_port3.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
+  <defs
+     id="defs5767">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker8192"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#000055;stroke-width:1pt;stroke-opacity:1;fill:#000055;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path8190" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker5522"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#550000;stroke-width:1pt;stroke-opacity:1;fill:#550000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5520" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4767"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#554400;stroke-width:1pt;stroke-opacity:1;fill:#554400;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4761"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#554400;stroke-width:1pt;stroke-opacity:1;fill:#554400;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-3"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4767-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#554400;fill-opacity:1;fill-rule:evenodd;stroke:#554400;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5522-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#002255;fill-opacity:1;fill-rule:evenodd;stroke:#002255;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5520-2" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker8192-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#550000;fill-opacity:1;fill-rule:evenodd;stroke:#550000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path8190-1" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="426.3004"
+     inkscape:cy="286.96824"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     inkscape:snap-global="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true">
+    <sodipodi:guide
+       position="65.919525,44.627197"
+       orientation="0,1"
+       id="guide5318"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="92.166024,127.05271"
+       orientation="0,1"
+       id="guide5416"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="113.72318,92.207987"
+       orientation="0,1"
+       id="guide5420"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="68.969954,60.502213"
+       orientation="0,1"
+       id="guide5422"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="65.919524,15.927582"
+       orientation="0,1"
+       id="guide5424"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="114.66031,127.05271"
+       orientation="1,0"
+       id="guide5559"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="130.80375,127.30271"
+       orientation="1,0"
+       id="guide5561"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="132.65632,76.377229"
+       orientation="0,1"
+       id="guide5563"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="132.65634,79.427644"
+       orientation="0,1"
+       id="guide5565"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="68.969957,41.576763"
+       orientation="0,1"
+       id="guide5567"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5770">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-157)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#cccccc;stroke:#808080;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect6318"
+       width="142.47015"
+       height="133.101"
+       x="47.367458"
+       y="160.79601"
+       ry="0.17156684"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <rect
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       ry="0.036993723"
+       y="252.3728"
+       x="50.417892"
+       height="28.699612"
+       width="136.36929"
+       id="rect4571"
+       style="fill:#e6e6e6;stroke:#808080;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+    <rect
+       style="fill:#ff0000;stroke:#800080;stroke-width:0.80000001;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect4575-35-2"
+       width="3.0504334"
+       height="3.0504334"
+       x="180.68633"
+       y="239.54819"
+       rx="0.32983404" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="53.17881"
+       y="276.48505"
+       id="text6365-1-0-9"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6363-0-1-1"
+         x="53.17881"
+         y="276.48505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332">XMClib</tspan></text>
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 135.95055,255.42324 v -9.47172"
+       id="path5163"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:#e6e6e6;stroke:#808080;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect4704"
+       width="136.36929"
+       height="85.475906"
+       x="50.417892"
+       y="163.84642"
+       ry="0.11017822"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 111.73562,255.42324 V 217.57236"
+       id="path5163-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.50000001, 0.50000001;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 115.30212,176.35959 H 99.158677"
+       id="path5159-9-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 68.467681,198.64689 v 6.10088"
+       id="path5159"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 85.582977,255.42324 V 236.49779"
+       id="path5161"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 85.311517,217.57236 v 3.05041"
+       id="path5159-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 61.408012,198.64689 v 56.77635"
+       id="path5157"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       ry="0.020462854"
+       y="220.62277"
+       x="53.468323"
+       height="15.875015"
+       width="63.686371"
+       id="rect4736"
+       style="opacity:0.75;fill:#cccccc;stroke:#666666;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="50.479729"
+       y="289.30963"
+       id="text6365-1-0"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6363-0-1"
+         x="50.479729"
+         y="289.30963"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332">XMC4500</tspan></text>
+    <g
+       id="g4841"
+       transform="translate(13.602534,10.583333)">
+      <rect
+         style="opacity:0.75;fill:#cccccc;stroke:#666666;stroke-width:0.49999997;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4760-0"
+         width="26.369692"
+         height="12.824589"
+         x="58.795597"
+         y="244.8399"
+         ry="0.01653086"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="61.791813"
+         y="253.07712"
+         id="text4774"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan4772"
+           x="61.791813"
+           y="253.07712"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332">Ethernet</tspan></text>
+    </g>
+    <g
+       id="g4846"
+       transform="translate(13.602534,10.583333)">
+      <rect
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         ry="0.016530868"
+         y="244.8399"
+         x="88.215721"
+         height="12.824594"
+         width="19.834715"
+         id="rect4820"
+         style="opacity:0.75;fill:#cccccc;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         id="text4778"
+         y="253.07712"
+         x="98.044411"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332"
+           y="253.07712"
+           x="98.044411"
+           id="tspan4776"
+           sodipodi:role="line">PRNG</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 156.71781,255.42324 V 236.49779"
+       id="path5165"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g4851"
+       transform="translate(36.487671,10.583328)">
+      <rect
+         style="opacity:0.75;fill:#cccccc;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4831"
+         width="12.939404"
+         height="12.824589"
+         x="113.76044"
+         y="244.8399"
+         ry="0.01653086"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="117.05146"
+         y="253.07712"
+         id="text4786"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan4784"
+           x="117.05146"
+           y="253.07712"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332">SPI</tspan></text>
+    </g>
+    <rect
+       style="opacity:0.75;fill:#cccccc;stroke:#666666;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect4866"
+       width="63.53162"
+       height="31.750031"
+       x="120.20514"
+       y="204.74776"
+       ry="0.040925708"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       id="text4891"
+       y="231.91042"
+       x="122.96605"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332"
+         y="231.91042"
+         x="122.96605"
+         id="tspan4889"
+         sodipodi:role="line">SHEI_lib</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path5245"
+       d="m 107.3554,198.64689 v 6.10088"
+       style="fill:none;stroke:#999999;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="opacity:0.75;fill:#cccccc;stroke:#666666;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect4914"
+       width="63.686382"
+       height="12.82458"
+       x="53.468323"
+       y="204.74777"
+       ry="0.016530849"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <g
+       id="g5063"
+       transform="translate(-11.551328,-74.892609)">
+      <rect
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         ry="0.01653086"
+         y="244.8399"
+         x="88.215721"
+         height="12.824589"
+         width="22.494287"
+         id="rect5057"
+         style="opacity:0.75;fill:#b7c4c8;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         id="text5061"
+         y="253.07712"
+         x="99.32814"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332"
+           y="253.07712"
+           x="99.32814"
+           id="tspan5059"
+           sodipodi:role="line">AWS_IoT</tspan></text>
+    </g>
+    <g
+       transform="translate(7.8925314,-59.017593)"
+       id="g5086">
+      <rect
+         style="opacity:0.75;fill:#b7c4c8;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect5080"
+         width="22.494287"
+         height="12.824589"
+         x="88.215721"
+         y="244.8399"
+         ry="0.01653086"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="99.420769"
+         y="250.39919"
+         id="text5084"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan5082"
+           x="99.420769"
+           y="250.39919"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332">web</tspan><tspan
+           id="tspan5243"
+           sodipodi:role="line"
+           x="99.420769"
+           y="255.69086"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332">server</tspan></text>
+    </g>
+    <g
+       transform="translate(27.336394,-74.892609)"
+       id="g5096">
+      <rect
+         style="opacity:0.75;fill:#b7c4c8;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect5090"
+         width="22.494287"
+         height="12.824589"
+         x="88.215721"
+         y="244.8399"
+         ry="0.01653086"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="99.440102"
+         y="249.95715"
+         id="text5094"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan5092"
+           x="99.440102"
+           y="249.95715"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332">sensor</tspan><tspan
+           id="tspan5209"
+           sodipodi:role="line"
+           x="99.440102"
+           y="255.24883"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332">read</tspan></text>
+    </g>
+    <g
+       id="g5106"
+       transform="translate(46.780257,-59.017593)">
+      <rect
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         ry="0.01653086"
+         y="244.8399"
+         x="88.215721"
+         height="12.824589"
+         width="22.494287"
+         id="rect5100"
+         style="opacity:0.75;fill:#b7c4c8;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         id="text5104"
+         y="253.07712"
+         x="99.420769"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332"
+           y="253.07712"
+           x="99.420769"
+           id="tspan5102"
+           sodipodi:role="line">Task_5</tspan></text>
+    </g>
+    <g
+       id="g5114"
+       transform="translate(66.22412,-74.892609)">
+      <rect
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         ry="0.01653086"
+         y="244.8399"
+         x="88.215721"
+         height="12.824589"
+         width="22.494287"
+         id="rect5108"
+         style="opacity:0.75;fill:#b7c4c8;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         id="text5112"
+         y="253.07712"
+         x="99.32814"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332"
+           y="253.07712"
+           x="99.32814"
+           id="tspan5110"
+           sodipodi:role="line">Task_6</tspan></text>
+    </g>
+    <g
+       id="g4836"
+       transform="translate(13.602534,10.583333)">
+      <rect
+         style="opacity:0.75;fill:#cccccc;stroke:#666666;stroke-width:0.49999997;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4760"
+         width="15.879374"
+         height="12.824589"
+         x="39.865791"
+         y="244.8399"
+         ry="0.01653086"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200" />
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         id="text6365-1-0-9-9"
+         y="253.07712"
+         x="43.215961"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332"
+           y="253.07712"
+           x="43.215961"
+           id="tspan6363-0-1-1-3"
+           sodipodi:role="line">RTC</tspan></text>
+    </g>
+    <g
+       transform="translate(-30.995184,-59.017593)"
+       id="g5040">
+      <rect
+         style="opacity:0.75;fill:#b7c4c8;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect5034"
+         width="22.494287"
+         height="12.824589"
+         x="88.215721"
+         y="244.8399"
+         ry="0.01653086"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="99.32814"
+         y="253.07712"
+         id="text5038"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan5036"
+           x="99.32814"
+           y="253.07712"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.26458332">NTP</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#999999;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 87.911537,182.77188 v 21.97589"
+       id="path5159-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5226"
+       d="m 126.79926,182.77188 v 21.97589"
+       style="fill:none;stroke:#999999;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       id="g4846-3"
+       transform="translate(36.487678,10.583328)">
+      <rect
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         ry="0.01653086"
+         y="244.8399"
+         x="88.215721"
+         height="12.824589"
+         width="22.494287"
+         id="rect4820-6"
+         style="opacity:0.75;fill:#cccccc;stroke:#666666;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         id="text4778-1"
+         y="253.07712"
+         x="91.504051"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332"
+           y="253.07712"
+           x="91.504051"
+           id="tspan4776-2"
+           sodipodi:role="line">SysTick</tspan></text>
+    </g>
+    <g
+       id="g4851-3"
+       transform="translate(52.477508,10.583328)">
+      <rect
+         style="opacity:0.75;fill:#cccccc;stroke:#808080;stroke-width:0.49999994;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4831-1"
+         width="17.215328"
+         height="12.824589"
+         x="113.76044"
+         y="244.8399"
+         ry="0.01653086"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="117.05146"
+         y="253.07712"
+         id="text4786-9"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan4784-4"
+           x="117.05146"
+           y="262.44089"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332" /></text>
+      <g
+         id="g5374"
+         transform="matrix(1.6090555,0,0,1.6090555,-73.385477,-150.87168)"
+         style="stroke-width:0.62148261">
+        <circle
+           r="0.24221301"
+           cy="250.94499"
+           cx="118.71697"
+           id="path5350"
+           style="fill:#000000;stroke:none;stroke-width:0.31074131;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+        <circle
+           style="fill:#000000;stroke:none;stroke-width:0.31074131;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+           id="circle5367"
+           cx="119.77413"
+           cy="250.94499"
+           r="0.24221301" />
+        <circle
+           r="0.24221301"
+           cy="250.94499"
+           cx="120.83128"
+           id="circle5369"
+           style="fill:#000000;stroke:none;stroke-width:0.31074131;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      </g>
+    </g>
+    <text
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       id="text4740"
+       y="244.735"
+       x="53.17881"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332"
+         y="244.735"
+         x="53.17881"
+         id="tspan4738"
+         sodipodi:role="line">CMSIS-RTOS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="56.229248"
+       y="231.91042"
+       id="text4862"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4860"
+         x="56.229248"
+         y="231.91042"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332">TCP/IP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="56.22924"
+       y="212.98499"
+       id="text4862-5"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan4860-0"
+         x="56.22924"
+         y="212.98499"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#000000;stroke-width:0.26458332">TLS</tspan></text>
+    <g
+       id="g5467"
+       transform="translate(-1.5165136)"
+       style="stroke:#1a1a1a">
+      <path
+         sodipodi:open="true"
+         d="m 40.758602,172.17679 a 1.9795071,1.9795071 0 0 1 1.979508,-1.97951"
+         sodipodi:end="4.712389"
+         sodipodi:start="3.1415927"
+         sodipodi:ry="1.9795071"
+         sodipodi:rx="1.9795071"
+         sodipodi:cy="172.17679"
+         sodipodi:cx="42.73811"
+         sodipodi:type="arc"
+         id="path5414"
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <path
+         sodipodi:open="true"
+         d="m 42.73811,198.3969 a 1.9795071,1.9795071 0 0 1 -1.399723,-0.57979 1.9795071,1.9795071 0 0 1 -0.579785,-1.39972"
+         sodipodi:end="3.1415927"
+         sodipodi:start="1.5707963"
+         sodipodi:ry="1.9795071"
+         sodipodi:rx="1.9795071"
+         sodipodi:cy="196.41739"
+         sodipodi:cx="42.73811"
+         sodipodi:type="arc"
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="circle5426" />
+      <g
+         transform="translate(-3.9608371,2.67383)"
+         id="g5436"
+         style="stroke:#1a1a1a">
+        <path
+           id="circle5428"
+           style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+           sodipodi:type="arc"
+           sodipodi:cx="42.73811"
+           sodipodi:cy="183.61057"
+           sodipodi:rx="1.9795071"
+           sodipodi:ry="1.9795071"
+           sodipodi:start="4.712389"
+           sodipodi:end="0"
+           d="m 42.73811,181.63106 a 1.9795071,1.9795071 0 0 1 1.979507,1.97951"
+           sodipodi:open="true" />
+        <path
+           style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+           id="circle5430"
+           sodipodi:type="arc"
+           sodipodi:cx="42.73811"
+           sodipodi:cy="179.63597"
+           sodipodi:rx="1.9795071"
+           sodipodi:ry="1.9795071"
+           sodipodi:start="0"
+           sodipodi:end="1.5707963"
+           d="m 44.717617,179.63597 a 1.9795071,1.9795071 0 0 1 -1.979507,1.97951"
+           sodipodi:open="true" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path5438"
+         d="m 40.757226,172.17678 v 10.16459"
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 40.757226,186.27416 v 10.16459"
+         id="path5444"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g5476"
+       transform="translate(-1.5165136)"
+       style="stroke:#1a1a1a">
+      <g
+         id="g5450"
+         transform="translate(-3.9608371,39.124498)"
+         style="stroke:#1a1a1a">
+        <path
+           sodipodi:open="true"
+           d="m 42.73811,181.63106 a 1.9795071,1.9795071 0 0 1 1.979507,1.97951"
+           sodipodi:end="0"
+           sodipodi:start="4.712389"
+           sodipodi:ry="1.9795071"
+           sodipodi:rx="1.9795071"
+           sodipodi:cy="183.61057"
+           sodipodi:cx="42.73811"
+           sodipodi:type="arc"
+           style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+           id="path5446" />
+        <path
+           sodipodi:open="true"
+           d="m 44.717617,179.63597 a 1.9795071,1.9795071 0 0 1 -1.979507,1.97951"
+           sodipodi:end="1.5707963"
+           sodipodi:start="0"
+           sodipodi:ry="1.9795071"
+           sodipodi:rx="1.9795071"
+           sodipodi:cy="179.63597"
+           sodipodi:cx="42.73811"
+           sodipodi:type="arc"
+           id="path5448"
+           style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      </g>
+      <path
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="path5452"
+         sodipodi:type="arc"
+         sodipodi:cx="42.73811"
+         sodipodi:cy="206.97728"
+         sodipodi:rx="1.9795071"
+         sodipodi:ry="1.9795071"
+         sodipodi:start="3.1415927"
+         sodipodi:end="4.712389"
+         d="m 40.758602,206.97728 a 1.9795071,1.9795071 0 0 1 1.979508,-1.97951"
+         sodipodi:open="true" />
+      <path
+         id="path5454"
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         sodipodi:type="arc"
+         sodipodi:cx="42.73811"
+         sodipodi:cy="234.26828"
+         sodipodi:rx="1.9795071"
+         sodipodi:ry="1.9795071"
+         sodipodi:start="1.5707963"
+         sodipodi:end="3.1415927"
+         d="M 42.73811,236.24779 A 1.9795071,1.9795071 0 0 1 41.338387,235.668 1.9795071,1.9795071 0 0 1 40.758602,234.26828"
+         sodipodi:open="true" />
+      <path
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 40.757225,206.97727 v 11.81832"
+         id="path5456"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5458"
+         d="m 40.757225,222.72837 v 11.55838"
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.49999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g5492"
+       transform="translate(-1.5165136,82.425522)"
+       style="stroke:#1a1a1a">
+      <path
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="path5478"
+         sodipodi:type="arc"
+         sodipodi:cx="42.73811"
+         sodipodi:cy="172.17679"
+         sodipodi:rx="1.9795071"
+         sodipodi:ry="1.9795071"
+         sodipodi:start="3.1415927"
+         sodipodi:end="4.712389"
+         d="m 40.758602,172.17679 a 1.9795071,1.9795071 0 0 1 1.979508,-1.97951"
+         sodipodi:open="true" />
+      <path
+         id="path5480"
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         sodipodi:type="arc"
+         sodipodi:cx="42.73811"
+         sodipodi:cy="196.41739"
+         sodipodi:rx="1.9795071"
+         sodipodi:ry="1.9795071"
+         sodipodi:start="1.5707963"
+         sodipodi:end="3.1415927"
+         d="m 42.73811,198.3969 a 1.9795071,1.9795071 0 0 1 -1.399723,-0.57979 1.9795071,1.9795071 0 0 1 -0.579785,-1.39972"
+         sodipodi:open="true" />
+      <g
+         id="g5486"
+         transform="translate(-3.9608371,2.67383)"
+         style="stroke:#1a1a1a">
+        <path
+           sodipodi:open="true"
+           d="m 42.73811,181.63106 a 1.9795071,1.9795071 0 0 1 1.979507,1.97951"
+           sodipodi:end="0"
+           sodipodi:start="4.712389"
+           sodipodi:ry="1.9795071"
+           sodipodi:rx="1.9795071"
+           sodipodi:cy="183.61057"
+           sodipodi:cx="42.73811"
+           sodipodi:type="arc"
+           style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+           id="path5482" />
+        <path
+           sodipodi:open="true"
+           d="m 44.717617,179.63597 a 1.9795071,1.9795071 0 0 1 -1.979507,1.97951"
+           sodipodi:end="1.5707963"
+           sodipodi:start="0"
+           sodipodi:ry="1.9795071"
+           sodipodi:rx="1.9795071"
+           sodipodi:cy="179.63597"
+           sodipodi:cx="42.73811"
+           sodipodi:type="arc"
+           id="path5484"
+           style="fill:none;stroke:#1a1a1a;stroke-width:0.5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      </g>
+      <path
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 40.757226,172.17678 v 10.16459"
+         id="path5488"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5490"
+         d="m 40.757226,186.27416 v 10.16459"
+         style="fill:none;stroke:#1a1a1a;stroke-width:0.49999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <text
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       id="text4740-3"
+       y="219.32773"
+       x="6.3069267"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#1a1a1a;stroke-width:0.26458332"
+         y="219.32773"
+         x="6.3069267"
+         id="tspan4738-6"
+         sodipodi:role="line">Pilas  de</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#1a1a1a;stroke-width:0.26458332"
+         y="224.6194"
+         x="6.3069267"
+         sodipodi:role="line"
+         id="tspan5512">protocolos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="7.5304203"
+       y="183.00204"
+       id="text5518"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan5514"
+         x="7.5304203"
+         y="183.00204"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#1a1a1a;stroke-width:0.26458332">Tareas de</tspan><tspan
+         id="tspan5516"
+         sodipodi:role="line"
+         x="7.5304203"
+         y="188.29372"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#1a1a1a;stroke-width:0.26458332">alto  nivel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="2.5149612"
+       y="265.42755"
+       id="text5526"
+       inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan5522"
+         x="2.5149612"
+         y="265.42755"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#1a1a1a;stroke-width:0.26458332">Abstracción</tspan><tspan
+         id="tspan5524"
+         sodipodi:role="line"
+         x="2.5149612"
+         y="270.71921"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';fill:#1a1a1a;stroke-width:0.26458332">del hardware</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="mbed TLS"
+     style="display:none">
+    <rect
+       transform="translate(0,-157)"
+       style="fill:#ff0000;stroke:#800080;stroke-width:0.80000001;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect4575-5-2"
+       width="3.0504334"
+       height="3.0504334"
+       x="262.73807"
+       y="228.69156"
+       rx="0.32983404" />
+    <rect
+       transform="translate(0,-157)"
+       style="fill:#ff0000;stroke:#800080;stroke-width:0.80000001;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect4592-6-7"
+       width="3.0504336"
+       height="12.824584"
+       x="264.4595"
+       y="238.05072"
+       ry="0.25638747" />
+    <g
+       id="g18169">
+      <rect
+         style="opacity:0.2;fill:#ff0000;stroke:#550000;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect17727"
+         width="19.834719"
+         height="12.824582"
+         x="101.81825"
+         y="98.423241"
+         rx="0.32983404" />
+      <rect
+         rx="0.32983404"
+         y="98.423241"
+         x="101.81825"
+         height="3.0504303"
+         width="19.678345"
+         id="rect4575-5-2-3-6"
+         style="opacity:0.6;fill:#ff0000;stroke:#550000;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <rect
+         rx="0.32983404"
+         y="54.471497"
+         x="97.476364"
+         height="3.0504303"
+         width="19.678345"
+         id="rect4575-5-2-3-6-5"
+         style="opacity:0.6;fill:#ff0000;stroke:#550000;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <path
+         style="fill:none;stroke:#550000;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5522)"
+         d="m 116.87123,55.778331 c 38.62651,3.417498 46.09804,23.818915 -6.30578,43.880342"
+         id="path5518"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g18157">
+      <rect
+         style="opacity:0.2;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4735"
+         width="63.686371"
+         height="15.875015"
+         x="53.468323"
+         y="63.622772"
+         rx="0.32983404" />
+      <rect
+         rx="0.32983404"
+         y="63.622772"
+         x="53.468323"
+         height="3.0504303"
+         width="63.653801"
+         id="rect17746"
+         style="opacity:0.6;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <rect
+         rx="0.32983404"
+         y="57.521927"
+         x="53.468323"
+         height="3.0504303"
+         width="63.686386"
+         id="rect4575-5-2-3"
+         style="opacity:0.6;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5040"
+         d="m 116.87123,58.892091 c 6.12246,4.190816 -7.35587,5.911857 -9.24575,6.195339"
+         style="fill:none;stroke:#554400;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+      <rect
+         style="display:inline;opacity:0.2;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4735-7"
+         width="26.369692"
+         height="12.824582"
+         x="72.398132"
+         y="98.423241"
+         rx="0.32983404" />
+    </g>
+    <g
+       id="g18182">
+      <rect
+         style="opacity:0.25;fill:#0044aa;stroke:#002255;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4752"
+         width="15.6693"
+         height="12.783318"
+         x="53.468327"
+         y="98.423241"
+         rx="0.32983404" />
+      <rect
+         rx="0.32983404"
+         y="98.423241"
+         x="53.468327"
+         height="3.0504303"
+         width="15.669298"
+         id="rect17729"
+         style="opacity:0.6;fill:#0044aa;stroke:#002255;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <rect
+         style="opacity:0.6;fill:#0044aa;stroke:#002255;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4752-7"
+         width="19.678345"
+         height="3.0504303"
+         x="97.476364"
+         y="51.421066"
+         rx="0.32983404" />
+      <path
+         style="fill:none;stroke:#000055;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8192)"
+         d="M 97.925178,53.127954 C 6.3407928,72.437818 32.030242,92.963174 62.457326,99.483263"
+         id="path8188"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <rect
+         style="display:inline;opacity:0.25;fill:#0044aa;stroke:#002255;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4752-8"
+         width="22.494287"
+         height="12.824585"
+         x="57.220535"
+         y="28.822311"
+         rx="0.32983404" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="AWS IoT SDK"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#ff0000;stroke:#800080;stroke-width:0.80000001;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect4575-5-2-2"
+       width="3.0504336"
+       height="3.0504336"
+       x="277.33011"
+       y="63.050739"
+       rx="0.32983404" />
+    <rect
+       style="display:inline;fill:#ff0000;stroke:#800080;stroke-width:0.80000001;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect4592-6-7-7"
+       width="3.0504336"
+       height="12.824585"
+       x="279.05154"
+       y="72.409904"
+       ry="0.25638747" />
+    <g
+       id="g18144">
+      <rect
+         style="display:inline;opacity:0.6;fill:#ff0000;stroke:#550000;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4752-6"
+         width="22.644279"
+         height="3.2504311"
+         x="76.514397"
+         y="16.45916"
+         rx="0.32983404" />
+      <rect
+         style="display:inline;opacity:0.6;fill:#ff0000;stroke:#550000;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4752-7-6"
+         width="19.67836"
+         height="6.8283029"
+         x="167.10884"
+         y="85.494026"
+         rx="0.32983404" />
+      <path
+         style="display:inline;fill:none;stroke:#550000;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8192-9)"
+         d="M 97.984093,18.196412 C 186.53936,39.109894 210.39489,67.85321 180.68633,85.598618"
+         id="path8188-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <text
+         inkscape:export-ydpi="200"
+         inkscape:export-xdpi="200"
+         inkscape:export-filename="/home/cristian-deb/workspace/master/tfm/memoria/txt/img/hardware-architecture.png"
+         id="text4740-3-7"
+         y="90.444878"
+         x="176.98119"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.5;font-family:'Free Avant Garde';-inkscape-font-specification:'Free Avant Garde';text-align:center;text-anchor:middle;fill:#1a1a1a;stroke-width:0.26458332"
+           y="90.444878"
+           x="176.98119"
+           sodipodi:role="line"
+           id="tspan5512-9">mutex</tspan></text>
+    </g>
+    <g
+       id="g18211">
+      <rect
+         rx="0.32983404"
+         y="89.571899"
+         x="124.7034"
+         height="2.900429"
+         width="22.644287"
+         id="rect4575-5-2-3-6-3"
+         style="display:inline;opacity:0.6;fill:#0055d4;stroke:#002255;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <rect
+         rx="0.32983404"
+         y="19.709591"
+         x="76.514397"
+         height="3.0118599"
+         width="22.644279"
+         id="rect4575-5-2-3-6-5-2"
+         style="display:inline;opacity:0.6;fill:#0055d4;stroke:#002255;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <path
+         style="display:inline;fill:none;stroke:#002255;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5522-6)"
+         d="m 98.18822,21.378192 c 78.18239,21.591826 94.87472,49.009069 42.47091,69.070497"
+         id="path5518-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <rect
+         style="display:inline;opacity:0.2;fill:#0044aa;stroke:#002255;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect12592"
+         width="22.644287"
+         height="12.974586"
+         x="124.5534"
+         y="98.273232"
+         rx="0.32983404" />
+    </g>
+    <g
+       id="g18199">
+      <rect
+         style="display:inline;opacity:0.25;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect18053"
+         width="63.686386"
+         height="12.824585"
+         x="53.468323"
+         y="47.747772"
+         rx="0.32983404" />
+      <rect
+         rx="0.32983404"
+         y="47.747772"
+         x="53.468323"
+         height="3.0504303"
+         width="63.686386"
+         id="rect4575-5-2-3-0"
+         style="display:inline;opacity:0.6;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal" />
+      <rect
+         style="display:inline;opacity:0.6;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect4735-9"
+         width="22.494287"
+         height="3.0504301"
+         x="76.664391"
+         y="22.721451"
+         rx="0.32983404" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5040-0"
+         d="m 98.335289,24.309913 c 23.698361,7.214626 22.941511,16.71565 -5.784677,24.65315"
+         style="display:inline;fill:none;stroke:#554400;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-3)" />
+      <rect
+         style="display:inline;opacity:0.25;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect18053-9"
+         width="63.686371"
+         height="15.875015"
+         x="53.468323"
+         y="63.622772"
+         rx="0.32983404" />
+      <rect
+         style="display:inline;opacity:0.25;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect18053-9-2"
+         width="26.369692"
+         height="12.82458"
+         x="72.398132"
+         y="98.423241"
+         rx="0.32983404" />
+      <rect
+         style="display:inline;opacity:0.25;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect18053-9-2-0"
+         width="19.834719"
+         height="12.824582"
+         x="101.81825"
+         y="98.423241"
+         rx="0.32983404" />
+      <rect
+         style="display:inline;opacity:0.25;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect18053-9-2-2"
+         width="15.879371"
+         height="12.824582"
+         x="53.468327"
+         y="98.423241"
+         rx="0.32983404" />
+      <rect
+         style="display:inline;opacity:0.25;fill:#ffcc00;stroke:#554400;stroke-width:0.2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+         id="rect18053-9-2-3"
+         width="22.494287"
+         height="12.824585"
+         x="57.220535"
+         y="28.822311"
+         rx="0.32983404" />
+    </g>
+  </g>
+</svg>
