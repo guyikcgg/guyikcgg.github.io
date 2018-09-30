@@ -1,5 +1,17 @@
 // This file contains custom (non hack.css) styles
 
+.inner {
+  position: relative;
+}
+
+.card {
+  height: 100%;
+}
+
+.github-corner-project {
+  opacity: 0.5;
+}
+
 .t-hackcss {  // Main prefix to avoid collisions
 
   // navigation.html

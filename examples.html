@@ -70,10 +70,14 @@ permalink: examples
         <div class="card-content">
           <div class="inner">
 
+            {% include github-ribbon-project.html %}
+
             {% if project.image %}
             <img src="{{ project.image }}" class="t-hackcss-cards-image"
                  alt="{{ project.name }}"
                  title="{{ project.name }}" />
+            {% elsif project.github %}
+              <br>
             {% endif %}
 
             <p class="t-hackcss-cards-text">{{ project.description }}</p>
