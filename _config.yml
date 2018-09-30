@@ -42,13 +42,13 @@ projects:
     description: "Master thesis: Cybersecurity in Embedded Systems (spanish)."
     date: 2018
     link_text: slides
-    link: tfm/index.html
+    link: projects/tfm/index.html
     # image: https://github.com/sobolevn/git-secret/blob/7c9ae0b1853d4c15549027524121b9e40219fe47/images/git-secret-sm.png?raw=true
     github: https://github.com/guyikcgg/Trabajo-Fin-de-Master
   - name: Visión Interior (Semir Zeki)
     description: Presentation connecting the perception of art with human's vision system (spanish).
     link_text: slides
-    link: vision_interior/index.html
+    link: projects/vision_interior/index.html
     # image: https://pbs.twimg.com/profile_images/751426570607271937/vGxpniun_400x400.jpg
   # - name: ecto_autoslug_field
   #   description: Automatically creates slugs for your Ecto models.
