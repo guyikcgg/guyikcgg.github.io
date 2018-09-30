@@ -16,6 +16,15 @@
 
   // navigation.html
 
+  &-personal-photo {
+    padding: 20px 20px 20px 0;
+  }
+
+  &-personal-photo img {
+    width: 100%;
+    border: solid 1px #ccc;
+  }
+
   &-navigation {
     padding-right: $spacing-unit;
   }
