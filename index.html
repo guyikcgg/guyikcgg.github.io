@@ -1,66 +1,128 @@
 ---
 layout: default
+permalink: index
 ---
 
-<div>
+<section>
+  <h1>Cristian G Guerrero</h1>
+</section>
 
-  <section>
-    <h1>Jekyll theme based on hack.css</h1>
+<section id="about-me">
+  <h2>About me</h2>
 
-    <p>
-      Mobile-ready, modern, stylish, simple.
-    </p>
-  </section>
 
-  <section>
-    <h2>What is Jekyll?</h2>
+  <div class="grid">
+    <div class="cell -3of12 t-hackcss-personal-photo">
+      <img alt="Personal photo" src="cristian.jpg"/>
+    </div>
+    <div class="cell -9of12">
+      <p>
+        Telecommunications engineer and free software (/hardware) lover.
+      </p>
+      <p>
+        In the last few yeares I've been working in the fields of cybersecurity and embedded systems. I love doing different things, from making and repairing gadgets to graphic desining. Want to know me better? Have a look to <a href="https://github.com/guyikcgg/CV/raw/master/CV_en.pdf" target="_blank">my CV</a>!
+      </p>
+    </div>
+  </div>
+</section>
 
-    <p>
-      <code>Jekyll</code> is a simple, blog-aware, static site generator
-      perfect for personal, project,
-      or organization sites. Think of it like a
-      file-based CMS, without all the complexity.
-      <code>Jekyll</code> takes your content, renders Markdown
-      and Liquid templates, and spits out a
-      complete, static website ready to be served by Apache,
-      Nginx or another web server.
-      <code>Jekyll</code> is the engine behind GitHub Pages,
-      which you can use to host sites right
-      from your GitHub repositories.
-    </p>
-  </section>
+<section>
+  <h2 id="about-this-site">About this site</h2>
+  <p>
+    I want to use this website to organize my work in a simple way, so I can share it with the world!
+  </p>
+  <p>
+    The site itself is created using <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://wemake.services/jekyll-theme-hackcss/">a theme based on hack.css</a>. Check them out!
+  </p>
+</section>
 
-  <section>
-    <h2>What is hack.css?</h2>
+<!-- <section> -->
+<!--   <h2>Posts</h2> -->
+<!--  -->
+<!--   {% for post in site.posts %} -->
+<!--     {% assign nth = forloop.index0 | modulo:2 %} -->
+<!--     <div class="media t&#45;hackcss&#45;media"> -->
+<!--  -->
+<!--       {% if nth == 0 %} -->
+<!--       <div class="t&#45;hackcss&#45;media&#45;shift media&#45;left"> -->
+<!--         <img class="t&#45;hackcss&#45;media&#45;image" -->
+<!--              src="{{ post.image_preview }}" alt="{{ post.title }}" -->
+<!--              title="{{ post.title }}" /> -->
+<!--       </div> -->
+<!--       {% endif %} -->
+<!--  -->
+<!--       <div class="media&#45;body"> -->
+<!--         <div class="media&#45;heading"> -->
+<!--           <span>{{ post.date | date_to_string }} &#38;raquo; -->
+<!--             {% if post.external_url %} -->
+<!--               <a href="{{ post.external_url }}" target="_blank" title="{{ project.name }}"> -->
+<!--                 {{ post.title }} -->
+<!--               </a> -->
+<!--             {% else %} -->
+<!--               <a href="{{ post.url | prepend: site.baseurl }}" title="{{ project.name }}"> -->
+<!--                 {{ post.title }} -->
+<!--               </a> -->
+<!--             {% endif %} -->
+<!--           </span> -->
+<!--         </div> -->
+<!--         <div class="media&#45;content"> -->
+<!--           {{ post.short_description }} -->
+<!--         </div> -->
+<!--       </div> -->
+<!--  -->
+<!--       {% if nth == 1 %} -->
+<!--       <div class="t&#45;hackcss&#45;media&#45;shift media&#45;right"> -->
+<!--         <img class="t&#45;hackcss&#45;media&#45;image" -->
+<!--              src="{{ post.image_preview }}" alt="{{ post.title }}" -->
+<!--              title="{{ post.title }}" /> -->
+<!--       </div> -->
+<!--       {% endif %} -->
+<!--     </div> -->
+<!--   {% endfor %} -->
+<!-- </section> -->
 
-    <p>
-      <code>hack.css</code> is a dead simple css framework. Chech out
-      <a href="http://hackcss.com/">hackcss.com</a> to know more.
-    </p>
-  </section>
+<section>
 
-  <section>
-    <h2>Getting started</h2>
+  <h2>Projects</h2>
 
-    <p>
-      <ol>
-        <li>Make sure you have <code>Jekyll</code> up and running</li>
-        <li>Clone
-          <a href="https://github.com/wemake-services/jekyll-theme-hackcss">this repository</a>
-        </li>
-        <li>Customize it</li>
-        <li>Push to <a href="https://pages.github.com/">gh-pages</a></li>
-      </ol>
+  <h3 id="recent-projects">Recent projects</h3>
 
-    </p>
-  </section>
+  <div class="grid t-hackcss-cards">
 
-  <section>
-    <h2>Subscribe</h2>
+    {% for project in site.projects %}
 
-    <p>
-      subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
-    </p>
-  </section>
+    <div class="cell -6of12 t-hackcss-cards-cell">
+      <div class="card">
+        <header class="card-header">{{ project.name }}</header>
+        <div class="card-content">
+          <div class="inner">
 
-</div>
+            {% include github-ribbon-project.html %}
+
+            {% if project.image %}
+            <img src="{{ project.image }}" class="t-hackcss-cards-image"
+                 alt="{{ project.name }}"
+                 title="{{ project.name }}" />
+            {% elsif project.github %}
+              <br>
+            {% endif %}
+
+            <p class="t-hackcss-cards-text">{{ project.description }}</p>
+            <p class="t-hackcss-cards-link">
+              <a href="{{ project.link }}" title="{{ project.name }}" target="_blank">
+                {% if project.link_text %}
+                  {{ project.link_text }}
+                {% else %}
+                  {{ project.name }}
+                {% endif %}
+               </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+
+  </div>
+</section>
