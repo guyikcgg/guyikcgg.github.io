@@ -55,6 +55,9 @@ $RECYCLE.BIN/
 #####=== Linux ===#####
 *~
 
+# Vim
+*.swp
+
 # KDE directory preferences
 .directory
 
