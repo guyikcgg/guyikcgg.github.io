@@ -32,23 +32,36 @@ navigation:
     url: "#about-me"
   - text: About this site
     url: "#about-this-site"
-  - text: Recent projects
-    url: "#recent-projects"
+  - text: Projects
+    url: "#projects"
+    title: "projects"
   - text: Contact me
     url: "#contact-me"
 
-projects:
-  - name: Seguridad de los Datos en Sistemas Empotrados
-    description: "Master thesis: Cybersecurity in Embedded Systems (spanish)."
-    date: 2018
-    link_text: slides
-    link: projects/tfm/index.html
-    # image: https://github.com/sobolevn/git-secret/blob/7c9ae0b1853d4c15549027524121b9e40219fe47/images/git-secret-sm.png?raw=true
-    github: https://github.com/guyikcgg/Trabajo-Fin-de-Master
-  - name: Visión Interior (Semir Zeki)
-    description: Presentation connecting the perception of art with human's vision system (spanish).
-    link_text: slides
-    link: projects/vision_interior/index.html
+project_sections:
+  - sec_name: "Recent projects"
+    id: recent-projects
+    projects:
+      - name: Seguridad de los Datos en Sistemas Empotrados
+        description: "Master thesis: Cybersecurity in Embedded Systems (spanish)."
+        date: 2018
+        link_text: slides
+        link: projects/tfm/index.html
+        # image: https://github.com/sobolevn/git-secret/blob/7c9ae0b1853d4c15549027524121b9e40219fe47/images/git-secret-sm.png?raw=true
+        github: https://github.com/guyikcgg/Trabajo-Fin-de-Master
+      - name: Visión Interior (Semir Zeki)
+        description: Presentation connecting the perception of art with human's vision system (spanish).
+        link_text: slides
+        link: projects/vision_interior/index.html
+  - sec_name: "Other projects"
+    id: other-projects
+    projects:
+      - name: ECOpilot
+        image: https://adescobar.github.io/ECOpilot/img/logo.png
+        description: "A small gas-sensing system to monitor vehicle pollution. AWARD: Finalist in Valeo Innovation Challenge 2017"
+        link_text: website
+        link: http://myecopilot.com
+
     # image: https://pbs.twimg.com/profile_images/751426570607271937/vGxpniun_400x400.jpg
   # - name: ecto_autoslug_field
   #   description: Automatically creates slugs for your Ecto models.

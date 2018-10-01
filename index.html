@@ -85,42 +85,50 @@ permalink: /
 
   <h2>Projects</h2>
 
-  <h3 id="recent-projects">Recent projects</h3>
+  {% for section in site.project_sections %}
 
-  <div class="grid t-hackcss-cards">
+    <section id="{{ section.id }}">
 
-    {% for project in site.projects %}
+      <h3>{{ section.sec_name }}</h3>
 
-    <div class="cell -6of12 t-hackcss-cards-cell">
-      <div class="card">
-        <header class="card-header">{{ project.name }}</header>
-        <div class="card-content">
-          <div class="inner">
+      <div class="grid t-hackcss-cards">
 
-            {% include github-ribbon-project.html %}
+        {% for project in section.projects %}
 
-            {% if project.image %}
-            <img src="{{ project.image }}" class="t-hackcss-cards-image"
-                 alt="{{ project.name }}"
-                 title="{{ project.name }}" />
-            {% elsif project.github %}
-              <br>
-            {% endif %}
+        <div class="cell -6of12 t-hackcss-cards-cell">
+          <div class="card">
+            <header class="card-header">{{ project.name }}</header>
+            <div class="card-content">
+              <div class="inner">
 
-            <p class="t-hackcss-cards-text">{{ project.description }}</p>
-            <p class="t-hackcss-cards-link">
-              <a href="{{ project.link }}" title="{{ project.name }}" target="_blank">
-                {% if project.link_text %}
-                  {{ project.link_text }}
-                {% else %}
-                  {{ project.name }}
+                {% include github-ribbon-project.html %}
+
+                {% if project.image %}
+                <img src="{{ project.image }}" class="t-hackcss-cards-image"
+                     alt="{{ project.name }}"
+                     title="{{ project.name }}" />
+                {% elsif project.github %}
+                  <br>
                 {% endif %}
-               </a>
-            </p>
+
+                <p class="t-hackcss-cards-text">{{ project.description }}</p>
+                <p class="t-hackcss-cards-link">
+                  <a href="{{ project.link }}" title="{{ project.name }}" target="_blank">
+                    {% if project.link_text %}
+                      {{ project.link_text }}
+                    {% else %}
+                      {{ project.name }}
+                    {% endif %}
+                   </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+
+        {% endfor %}
+
+      </section>
 
     {% endfor %}
 
