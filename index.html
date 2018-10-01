@@ -95,42 +95,41 @@ permalink: /
 
         {% for project in section.projects %}
 
-        <div class="cell -6of12 t-hackcss-cards-cell">
-          <div class="card">
-            <header class="card-header">{{ project.name }}</header>
-            <div class="card-content">
-              <div class="inner">
+          <div class="cell -6of12 t-hackcss-cards-cell">
+            <div class="card">
+              <header class="card-header">{{ project.name }}</header>
+              <div class="card-content">
+                <div class="inner">
 
-                {% include github-ribbon-project.html %}
+                  {% include github-ribbon-project.html %}
 
-                {% if project.image %}
-                <img src="{{ project.image }}" class="t-hackcss-cards-image"
-                     alt="{{ project.name }}"
-                     title="{{ project.name }}" />
-                {% elsif project.github %}
-                  <br>
-                {% endif %}
+                  {% if project.image %}
+                    <img src="{{ project.image }}" class="t-hackcss-cards-image" alt="{{ project.name }}" title="{{ project.name }}" />
+                  {% elsif project.github %}
+                    <br>
+                  {% endif %}
 
-                <p class="t-hackcss-cards-text">{{ project.description }}</p>
-                <p class="t-hackcss-cards-link">
-                  <a href="{{ project.link }}" title="{{ project.name }}" target="_blank">
-                    {% if project.link_text %}
-                      {{ project.link_text }}
-                    {% else %}
-                      {{ project.name }}
-                    {% endif %}
-                   </a>
-                </p>
+                  <p class="t-hackcss-cards-text">{{ project.description }}</p>
+                  {% for link in project.links %}
+                    <p class="t-hackcss-cards-link">
+                      <a href="{{ link.url }}" title="{{ project.name }}" target="_blank">
+                        {% if link.text %}
+                          {{ link.text }}
+                        {% else %}
+                          {{ project.name }}
+                        {% endif %}
+                      </a>
+                    </p>
+                  {% endfor %}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
         {% endfor %}
 
-      </section>
+      </div>
+    </section>
+  {% endfor %}
 
-    {% endfor %}
-
-  </div>
 </section>
