@@ -42,8 +42,15 @@ project_sections:
   - sec_name: "Recent projects"
     id: recent-projects
     projects:
+      - name: "True VS Fake"
+        description: "Videogame to talk about the spread of fake news (made with Unity engine). AWARD: Best design in Jamtoday Granada 2018."
+        image: projects/true_vs_fake/screenshot_001.jpg
+        github: https://github.com/guyikcgg/Jamtoday-2018
+        links:
+          - text: "making of [youtube]"
+            url: https://youtu.be/zbgDVoRsS_o
       - name: Seguridad de los Datos en Sistemas Empotrados
-        description: "Master thesis: Cybersecurity in Embedded Systems (spanish)."
+        description: "Master thesis: Cybersecurity in Embedded Systems (Spanish)."
         date: 2018
         github: https://github.com/guyikcgg/Trabajo-Fin-de-Master
         links:
