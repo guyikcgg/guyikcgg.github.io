@@ -43,7 +43,7 @@ project_sections:
     id: recent-projects
     projects:
       - name: "True VS Fake"
-        description: "Videogame to talk about the spread of fake news (made with Unity engine). AWARD: Best design in Jamtoday Granada 2018."
+        description: "Videogame to talk about the spread of fake news (made with Unity engine). AWARD: Best design at Jamtoday Granada 2018."
         image: projects/true_vs_fake/screenshot_001.jpg
         github: https://github.com/guyikcgg/Jamtoday-2018
         links:
@@ -73,6 +73,8 @@ project_sections:
         links:
           - text: website
             url: http://myecopilot.com
+          - text: poster
+            url: projects/ecopilot/ecopilot-poster.jpg
 
 social:
   - service: github
