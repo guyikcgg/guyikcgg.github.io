@@ -69,12 +69,22 @@ project_sections:
     projects:
       - name: ECOpilot
         image: https://adescobar.github.io/ECOpilot/img/logo.png
-        description: "A small gas-sensing system to monitor vehicle pollution. AWARD: Finalist in Valeo Innovation Challenge 2017"
+        description: "A small gas-sensing system to monitor vehicle pollution. AWARD: Finalist in Valeo Innovation Challenge 2017."
         links:
           - text: website
             url: http://myecopilot.com
           - text: poster
             url: projects/ecopilot/ecopilot-poster.jpg
+  - sec_name: "Graphic design"
+    id: graphic-design
+    projects:
+      - name: "[SCOPE] Dossier for a robotic workshop"
+        is_graphic: true
+        image: projects/graphic_design/dossier_digital.jpg
+        description: "Dossier for promoting a robotic workshop."
+        links:
+          - text: "dossier [pdf]"
+            url: projects/graphic_design/dossier_digital.pdf
 
 social:
   - service: github

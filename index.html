@@ -99,35 +99,42 @@ permalink: /
             <div class="card">
               <header class="card-header">{{ project.name }}</header>
               <div class="card-content">
-                <div class="inner">
 
-                  {% include github-ribbon-project.html %}
+                {% if project.is_graphic %}
 
-                  {% if project.image %}
-                    <img src="{{ project.image }}" class="t-hackcss-cards-image" alt="{{ project.name }}" title="{{ project.name }}" />
-                  {% elsif project.github %}
-                    <br>
-                  {% endif %}
+                  <div class="graphic-card" style="background-image: url(&quot;{{ project.image }}&quot;)">
+                {% endif %}
 
-                  <p class="t-hackcss-cards-text">{{ project.description }}</p>
-                  {% for link in project.links %}
-                    <p class="t-hackcss-cards-link">
-                      <a href="{{ link.url }}" title="{{ project.name }}" target="_blank">
-                        {% if link.text %}
-                          {{ link.text }}
-                        {% else %}
-                          {{ project.name }}
+                    <div class="inner">
+                      {% include github-ribbon-project.html %}
+
+                        {% if project.image %}
+                          <img src="{{ project.image }}" class="t-hackcss-cards-image" alt="{{ project.name }}" title="{{ project.name }}" />
+                        {% elsif project.github %}
+                          <br>
                         {% endif %}
-                      </a>
-                    </p>
-                  {% endfor %}
-                </div>
+
+                      <p class="t-hackcss-cards-text">{{ project.description }}</p>
+                      {% for link in project.links %}
+                        <p class="t-hackcss-cards-link">
+                          <a href="{{ link.url }}" title="{{ project.name }}" target="_blank">
+                            {% if link.text %}
+                              {{ link.text }}
+                            {% else %}
+                              {{ project.name }}
+                            {% endif %}
+                          </a>
+                        </p>
+                      {% endfor %}
+
+                    </div>
+                {% if project.is_graphic %}
+                  </div>
+                {% endif %}
               </div>
             </div>
           </div>
-
         {% endfor %}
-
       </div>
     </section>
   {% endfor %}
