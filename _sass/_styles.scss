@@ -17,7 +17,22 @@ ul.menu-item {
 }
 
 #about-me h2 {
-	margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.graphic-card, .graphic-card .inner {
+  min-height: 250px;
+}
+
+.graphic-card .inner:hover {
+  // opacity: 0.9;
+  opacity: 1;
+}
+
+.graphic-card .inner {
+  transition: all 1s;
+  background-color: white;
+  opacity: 0;
 }
 
 .t-hackcss {  // Main prefix to avoid collisions
