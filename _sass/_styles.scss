@@ -16,11 +16,16 @@ ul.menu-item {
   margin: 0;
 }
 
+#about-me h2 {
+	margin-bottom: 0;
+}
+
 .t-hackcss {  // Main prefix to avoid collisions
 
   // navigation.html
 
   &-personal-photo {
+    display: -webkit-inline-box;
     padding: 20px 20px 20px 0;
   }
 
