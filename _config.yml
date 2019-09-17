@@ -8,7 +8,7 @@
 # Site settings
 title: "Cristian G Guerrero: personal website"
 description: > # this means to ignore newlines until "baseurl:"
-  Telecommunications engineer and free software developper
+  I'm a passionate Engineer and a Free Software lover. Never stop scripting!!!
 repository: https://github.com/guyikcgg/guyikcgg.github.io/
 # baseurl: # the subpath of your site, e.g. /blog
 url: https://guyikcgg.github.io/  # the base hostname & protocol for your site
@@ -43,7 +43,7 @@ project_sections:
     id: recent-projects
     projects:
       - name: "True VS Fake"
-        description: "Videogame to talk about the spread of fake news (made with Unity engine). AWARD: Best design at Jamtoday Granada 2018."
+        description: "Videogame to talk about the spread of fake news. Developed on Unity. AWARD: Best videogame design @ Jamtoday Granada 2018."
         image: projects/true_vs_fake/screenshot_001.jpg
         github: https://github.com/guyikcgg/Jamtoday-2018
         links:
@@ -59,7 +59,7 @@ project_sections:
           - text: "report [pdf]"
             url: https://github.com/guyikcgg/Trabajo-Fin-de-Master/raw/master/memoria/TFM-Cristian-Gonzalez-Guerrero.pdf
       - name: Visión Interior (Semir Zeki)
-        description: Presentation connecting the perception of art with human's vision system (spanish).
+        description: Presentation connecting the perception of art with human's vision system (Spanish).
         image: projects/vision_interior/img/paolo_uccello_031-detail-sq.jpg
         links:
           - text: slides
@@ -69,10 +69,10 @@ project_sections:
     projects:
       - name: ECOpilot
         image: https://adescobar.github.io/ECOpilot/img/logo.png
-        description: "A small gas-sensing system to monitor vehicle pollution. AWARD: Finalist in Valeo Innovation Challenge 2017."
+        description: "A smart gas-sensing system to monitor vehicle pollution. AWARD: Finalist project @ Valeo Innovation Challenge 2017."
         links:
           - text: website
-            url: http://myecopilot.com
+            url: https://adescobar.github.io/ECOpilot/
           - text: poster
             url: projects/ecopilot/ecopilot-poster.jpg
   - sec_name: "Graphic design"
@@ -81,7 +81,7 @@ project_sections:
       - name: "[SCOPE] Dossier for a robotic workshop"
         is_graphic: true
         image: projects/graphic_design/dossier_digital.jpg
-        description: "Dossier for promoting a robotic workshop."
+        description: "Dossier for marketing a robotic workshop."
         links:
           - text: "dossier [pdf]"
             url: projects/graphic_design/dossier_digital.pdf
@@ -99,7 +99,7 @@ social:
   - service: telegram
     username: CristianCGG
     link: https://t.me/CristianCGG
-    # TODO add StackExchange and Wikipedia
+    # TODO add StackExchange and DEV
 
 # Plugins
 plugins:
