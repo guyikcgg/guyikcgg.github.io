@@ -39,16 +39,30 @@ navigation:
     url: "#contact-me"
 
 project_sections:
-  - sec_name: "Recent projects"
+  - sec_name: "Gaming projects"
     id: recent-projects
     projects:
+      - name: "D-pueblo"
+        description: "Board game to talk about the depopulation of rural areas. AWARD: Best board game @ Jamtoday Granada 2020."
+        image: "projects/d-pueblo/d-pueblo.png"
+        date: 2020
+        links:
+          - text: "game instructions (Spanish)"
+            url: https://docs.google.com/document/d/1htpeIOqn4h3VaautKxDRAaAUZ3ErzUL0D7glU3V0G5M
+          - text: "making of and unboxing [youtube]"
+            url: https://www.youtube.com/watch?v=laR1zVCKP9s
       - name: "True VS Fake"
         description: "Videogame to talk about the spread of fake news. Developed on Unity. AWARD: Best videogame design @ Jamtoday Granada 2018."
+        date: 2018
         image: projects/true_vs_fake/screenshot_001.jpg
         github: https://github.com/guyikcgg/Jamtoday-2018
         links:
           - text: "making of [youtube]"
             url: https://youtu.be/zbgDVoRsS_o
+
+  - sec_name: "Academic projects"
+    id: academic-projects
+    projects:
       - name: Seguridad de los Datos en Sistemas Empotrados
         description: "Master thesis: Cybersecurity in Embedded Systems (Spanish)."
         date: 2018
@@ -64,17 +78,20 @@ project_sections:
         links:
           - text: slides
             url: projects/vision_interior/index.html
+
   - sec_name: "Other projects"
     id: other-projects
     projects:
       - name: ECOpilot
         image: https://adescobar.github.io/ECOpilot/img/logo.png
         description: "A smart gas-sensing system to monitor vehicle pollution. AWARD: Finalist project @ Valeo Innovation Challenge 2017."
+        date: 2017
         links:
           - text: website
             url: https://adescobar.github.io/ECOpilot/
           - text: poster
             url: projects/ecopilot/ecopilot-poster.jpg
+
   - sec_name: "Graphic design"
     id: graphic-design
     projects:
