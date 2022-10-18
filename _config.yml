@@ -107,9 +107,9 @@ social:
   - service: github
     username: guyikcgg
     link: https://github.com/guyikcgg
-  - service: twitter
-    username: guyikcgg
-    link: https://twitter.com/guyikcgg
+  - service: stackoverflow
+    username: guyik
+    link: https://stackoverflow.com/users/3761766/guyik
   - service: linkedin
     username: CristianGGuerrero
     link: https://www.linkedin.com/in/cristiangguerrero/
