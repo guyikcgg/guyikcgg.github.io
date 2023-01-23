@@ -91,6 +91,8 @@ project_sections:
             url: https://adescobar.github.io/ECOpilot/
           - text: poster
             url: projects/ecopilot/ecopilot-poster.jpg
+          - text: souvenir [youtube]
+            url: https://www.youtube.com/watch?v=LXZLXaLkBHU
 
   - sec_name: "Graphic design"
     id: graphic-design
