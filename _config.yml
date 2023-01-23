@@ -93,6 +93,13 @@ project_sections:
             url: projects/ecopilot/ecopilot-poster.jpg
           - text: souvenir [youtube]
             url: https://www.youtube.com/watch?v=LXZLXaLkBHU
+      - name: Me Tropecé con la Alcachofa
+        image: https://guyikcgg.gitlab.io/me-tropece-con-la-alcachofa/assets/images/arroz-con-leche-01.jpg
+        description: "Recetario para consulta propia."
+        date: 2017
+        links:
+          - text: website
+            url: https://guyikcgg.gitlab.io/me-tropece-con-la-alcachofa/
 
   - sec_name: "Graphic design"
     id: graphic-design
