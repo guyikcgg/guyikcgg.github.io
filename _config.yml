@@ -78,6 +78,15 @@ project_sections:
         links:
           - text: slides
             url: projects/vision_interior/index.html
+      - name: DHCP Relay Agent
+        description: DHCP Relay Agent developed during college
+        date: 2014
+        image: projects/dhcp-relay-agent/dhcp-relay-agent.png
+        links:
+          - text: report [pdf]
+            url: https://sourceforge.net/p/dhcprelayagent/code/HEAD/tree/tags/v1.00/Rapport.pdf?format=raw
+          - text: source code
+            url: https://sourceforge.net/p/dhcprelayagent/code/HEAD/tree/tags/v1.00/
 
   - sec_name: "Other projects"
     id: other-projects
