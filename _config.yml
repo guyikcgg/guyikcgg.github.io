@@ -67,6 +67,7 @@ project_sections:
         description: "Master thesis: Cybersecurity in Embedded Systems (Spanish)."
         date: 2018
         github: https://github.com/guyikcgg/Trabajo-Fin-de-Master
+        image: projects/tfm/img/gw_funcion.png
         links:
           - text: slides
             url: projects/tfm/index.html
