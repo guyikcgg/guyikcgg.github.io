@@ -103,6 +103,13 @@ project_sections:
             url: projects/ecopilot/ecopilot-poster.jpg
           - text: souvenir [youtube]
             url: https://www.youtube.com/watch?v=LXZLXaLkBHU
+      - name: Los tres cavernícolas sabios
+        image: https://guyikcgg.gitlab.io/tres-cavernicolas-sabios/img/mirar.jpg
+        description: "Artistic project reviewing the message in 'Three wise monkeys'."
+        date: 2021
+        links:
+          - text: website
+            url: https://guyikcgg.gitlab.io/tres-cavernicolas-sabios/
       - name: Me Tropecé con la Alcachofa
         image: https://guyikcgg.gitlab.io/me-tropece-con-la-alcachofa/assets/images/arroz-con-leche-01.jpg
         description: "Recetario para consulta propia."
